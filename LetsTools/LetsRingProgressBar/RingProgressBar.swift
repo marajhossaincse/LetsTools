@@ -9,10 +9,14 @@ import SwiftUI
 
 struct RingProgressBar: View {
     var body: some View {
-        ZStack{
+        ZStack {
             Color.black
-            ring(for: .white, progress: 0.4)
-                .frame(width: 150)
+            ring(for: .red, progress: 0.4)
+                .frame(width: 165)
+            ring(for: .green, progress: 0.4)
+                .frame(width: 128)
+            ring(for: .blue, progress: 0.4)
+                .frame(width: 91)
         }
         .ignoresSafeArea()
     }

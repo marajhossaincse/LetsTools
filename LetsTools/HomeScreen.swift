@@ -9,9 +9,28 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        List{
-            EmptyView()
+        List {
+            NavigationLink("Ring Progress Bar") {
+                RingProgressBar()
+            }
+
+            NavigationLink("Tool") {
+                EmptyView()
+            }
+
+            NavigationLink("Tool") {
+                EmptyView()
+            }
+
+            NavigationLink("Tool") {
+                EmptyView()
+            }
+            NavigationLink("Tool") {
+                EmptyView()
+            }
         }
+        .navigationTitle("Lets Tools")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
