@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct RingProgressBar: View {
+    @Binding var isAnimated: Bool
+
+    @Binding var progressValueOne: CGFloat
+    @Binding var progressValueTwo: CGFloat
+    @Binding var progressValueThree: CGFloat
+
+    let animation = Animation.easeOut(duration: 3)
+
     var body: some View {
         ZStack {
             Color.black
-            ring(for: .red, progress: 0.4)
+            ring(for: .red, progress: progressValueOne)
                 .frame(width: 165)
-            ring(for: .green, progress: 0.4)
+            ring(for: .green, progress: progressValueTwo)
                 .frame(width: 128)
-            ring(for: .blue, progress: 0.4)
+            ring(for: .blue, progress: progressValueThree)
                 .frame(width: 91)
         }
+        .animation(animation, value: isAnimated)
         .ignoresSafeArea()
     }
 
@@ -37,6 +46,11 @@ struct RingProgressBar: View {
 
 struct RingProgressBar_Previews: PreviewProvider {
     static var previews: some View {
-        RingProgressBar()
+        RingProgressBar(
+            isAnimated: .constant(true),
+            progressValueOne: .constant(CGFloat.random(in: 0...1)),
+            progressValueTwo: .constant(CGFloat.random(in: 0...1)),
+            progressValueThree: .constant(CGFloat.random(in: 0...1))
+        )
     }
 }
