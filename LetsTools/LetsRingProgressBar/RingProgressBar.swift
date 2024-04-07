@@ -9,18 +9,23 @@ import SwiftUI
 
 struct RingProgressBar: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.black
+            ring(for: .white, progress: 0.4)
+                .frame(width: 150)
+        }
+        .ignoresSafeArea()
     }
 
     @ViewBuilder
-    private func ring() -> some View {
+    private func ring(for color: Color, progress value: CGFloat) -> some View {
         Circle()
             .stroke(style: StrokeStyle(lineWidth: 16))
             .foregroundStyle(.tertiary)
             .overlay {
                 Circle()
-                    .trim(from: 0, to: 1)
-                    .stroke(.white.gradient, style: StrokeStyle(lineWidth: 16, lineCap: .round))
+                    .trim(from: 0, to: value)
+                    .stroke(color.gradient, style: StrokeStyle(lineWidth: 16, lineCap: .round))
             }
             .rotationEffect(.degrees(-90))
     }
