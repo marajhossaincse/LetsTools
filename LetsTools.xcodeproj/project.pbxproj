@@ -12,6 +12,7 @@
 		CE31AA372BC1F8AA00B9D4EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */; };
 		CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */; };
 		CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */; };
+		CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBar.swift; sourceTree = "<group>"; };
+		CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */,
+				CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */,
 			);
 			path = LetsRingProgressBar;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,

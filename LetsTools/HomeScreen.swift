@@ -11,7 +11,7 @@ struct HomeScreen: View {
     var body: some View {
         List {
             NavigationLink("Ring Progress Bar") {
-                RingProgressBar()
+                RingProgressBarScreen()
             }
 
             NavigationLink("Tool") {
