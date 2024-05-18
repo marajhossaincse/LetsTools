@@ -14,8 +14,8 @@ struct HomeScreen: View {
                 RingProgressBarScreen()
             }
 
-            NavigationLink("Tool") {
-                EmptyView()
+            NavigationLink("Mask") {
+                MaskScreen()
             }
 
             NavigationLink("Tool") {

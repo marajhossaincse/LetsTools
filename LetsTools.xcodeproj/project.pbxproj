@@ -13,6 +13,7 @@
 		CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */; };
 		CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */; };
 		CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */; };
+		CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB73EAE2BF918A60095F300 /* MaskScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBar.swift; sourceTree = "<group>"; };
 		CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
+		CEB73EAE2BF918A60095F300 /* MaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */,
 				CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */,
 				CE31AA3F2BC20C6A00B9D4EE /* LetsRingProgressBar */,
+				CEB73EAD2BF918840095F300 /* LetsMask */,
 				CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
 			);
@@ -79,6 +82,14 @@
 				CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */,
 			);
 			path = LetsRingProgressBar;
+			sourceTree = "<group>";
+		};
+		CEB73EAD2BF918840095F300 /* LetsMask */ = {
+			isa = PBXGroup;
+			children = (
+				CEB73EAE2BF918A60095F300 /* MaskScreen.swift */,
+			);
+			path = LetsMask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
