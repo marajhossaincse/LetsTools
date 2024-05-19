@@ -19,7 +19,7 @@ struct HomeScreen: View {
             }
 
             NavigationLink("Tool") {
-                EmptyView()
+                MainScreen()
             }
 
             NavigationLink("Tool") {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F02582BFA2F9200EE3919 /* MainScreen.swift */; };
 		CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */; };
 		CE31AA342BC1F8AA00B9D4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */; };
 		CE31AA372BC1F8AA00B9D4EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2F02582BFA2F9200EE3919 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		CE31AA2C2BC1F8A800B9D4EE /* LetsTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsToolsApp.swift; sourceTree = "<group>"; };
 		CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2F02572BFA2F3600EE3919 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F02582BFA2F9200EE3919 /* MainScreen.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		CE31AA232BC1F8A800B9D4EE = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 				CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */,
 				CE31AA3F2BC20C6A00B9D4EE /* LetsRingProgressBar */,
 				CEB73EAD2BF918840095F300 /* LetsMask */,
+				CE2F02572BFA2F3600EE3919 /* Loading */,
 				CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
 			);
@@ -162,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
