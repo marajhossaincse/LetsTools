@@ -46,21 +46,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE2F02572BFA2F3600EE3919 /* Loading */ = {
+		CE2F02572BFA2F3600EE3919 /* LetsLoading */ = {
 			isa = PBXGroup;
 			children = (
 				CE2F02582BFA2F9200EE3919 /* MainScreen.swift */,
 				CE2F025C2BFA4BF000EE3919 /* LoadingView.swift */,
 			);
-			path = Loading;
+			path = LetsLoading;
 			sourceTree = "<group>";
 		};
-		CE2F75242C42EAF200076DC3 /* ContainerMenu */ = {
+		CE2F75242C42EAF200076DC3 /* LetsContainerMenu */ = {
 			isa = PBXGroup;
 			children = (
 				CE2F75252C42EB2F00076DC3 /* ContainerMenuScreen.swift */,
 			);
-			path = ContainerMenu;
+			path = LetsContainerMenu;
 			sourceTree = "<group>";
 		};
 		CE31AA232BC1F8A800B9D4EE = {
@@ -86,9 +86,9 @@
 				CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */,
 				CE31AA3F2BC20C6A00B9D4EE /* LetsRingProgressBar */,
 				CEB73EAD2BF918840095F300 /* LetsMask */,
-				CE2F02572BFA2F3600EE3919 /* Loading */,
-				CE9D07812C1DF5AE004C1813 /* CutCard */,
-				CE2F75242C42EAF200076DC3 /* ContainerMenu */,
+				CE2F02572BFA2F3600EE3919 /* LetsLoading */,
+				CE9D07812C1DF5AE004C1813 /* LetsCutCard */,
+				CE2F75242C42EAF200076DC3 /* LetsContainerMenu */,
 				CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
 			);
@@ -112,12 +112,12 @@
 			path = LetsRingProgressBar;
 			sourceTree = "<group>";
 		};
-		CE9D07812C1DF5AE004C1813 /* CutCard */ = {
+		CE9D07812C1DF5AE004C1813 /* LetsCutCard */ = {
 			isa = PBXGroup;
 			children = (
 				CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */,
 			);
-			path = CutCard;
+			path = LetsCutCard;
 			sourceTree = "<group>";
 		};
 		CEB73EAD2BF918840095F300 /* LetsMask */ = {

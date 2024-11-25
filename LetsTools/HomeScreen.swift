@@ -18,15 +18,15 @@ struct HomeScreen: View {
                 MaskScreen()
             }
 
-            NavigationLink("Tool") {
-                LoadingView()
+            NavigationLink("Loading Screen") {
+                MainScreen()
             }
 
-            NavigationLink("Tool") {
-                EmptyView()
+            NavigationLink("Cut card") {
+                CutCardScreen()
             }
-            NavigationLink("Tool") {
-                EmptyView()
+            NavigationLink("Container Menu") {
+                ContainerMenuScreen()
             }
         }
         .navigationTitle("Lets Tools")
@@ -36,6 +36,8 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        NavigationView{
+            HomeScreen()
+        }
     }
 }
