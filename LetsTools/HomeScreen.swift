@@ -28,6 +28,9 @@ struct HomeScreen: View {
             NavigationLink("Container Menu") {
                 ContainerMenuScreen()
             }
+            NavigationLink("Facebook Clone") {
+                FBHomeScreen()
+            }
         }
         .navigationTitle("Lets Tools")
         .navigationBarTitleDisplayMode(.inline)
@@ -36,7 +39,7 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
+        NavigationView {
             HomeScreen()
         }
     }

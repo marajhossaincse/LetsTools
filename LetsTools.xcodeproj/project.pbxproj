@@ -11,13 +11,16 @@
 		CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F025C2BFA4BF000EE3919 /* LoadingView.swift */; };
 		CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F75252C42EB2F00076DC3 /* ContainerMenuScreen.swift */; };
 		CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */; };
-		CE31AA342BC1F8AA00B9D4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */; };
-		CE31AA372BC1F8AA00B9D4EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */; };
 		CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */; };
 		CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */; };
 		CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */; };
 		CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */; };
 		CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB73EAE2BF918A60095F300 /* MaskScreen.swift */; };
+		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
+		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
+		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
+		D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */; };
+		D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +29,16 @@
 		CE2F75252C42EB2F00076DC3 /* ContainerMenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerMenuScreen.swift; sourceTree = "<group>"; };
 		CE31AA2C2BC1F8A800B9D4EE /* LetsTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsToolsApp.swift; sourceTree = "<group>"; };
-		CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CE31AA402BC20C9300B9D4EE /* RingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBar.swift; sourceTree = "<group>"; };
 		CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
 		CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCardScreen.swift; sourceTree = "<group>"; };
 		CEB73EAE2BF918A60095F300 /* MaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskScreen.swift; sourceTree = "<group>"; };
+		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
+		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeScreen.swift; sourceTree = "<group>"; };
+		D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +95,7 @@
 				CE2F02572BFA2F3600EE3919 /* LetsLoading */,
 				CE9D07812C1DF5AE004C1813 /* LetsCutCard */,
 				CE2F75242C42EAF200076DC3 /* LetsContainerMenu */,
-				CE31AA332BC1F8AA00B9D4EE /* Assets.xcassets */,
+				D9B73E2F2CF4C86000A63E04 /* LetsClone */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
 			);
 			path = LetsTools;
@@ -98,7 +104,7 @@
 		CE31AA352BC1F8AA00B9D4EE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				CE31AA362BC1F8AA00B9D4EE /* Preview Assets.xcassets */,
+				D983A2F02D169B5800A7C3CE /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -126,6 +132,25 @@
 				CEB73EAE2BF918A60095F300 /* MaskScreen.swift */,
 			);
 			path = LetsMask;
+			sourceTree = "<group>";
+		};
+		D9B73E2F2CF4C86000A63E04 /* LetsClone */ = {
+			isa = PBXGroup;
+			children = (
+				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
+				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
+			);
+			path = LetsClone;
+			sourceTree = "<group>";
+		};
+		D9B73E302CF4CA6100A63E04 /* FacebookClone */ = {
+			isa = PBXGroup;
+			children = (
+				D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */,
+				D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */,
+				D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */,
+			);
+			path = FacebookClone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE31AA372BC1F8AA00B9D4EE /* Preview Assets.xcassets in Resources */,
-				CE31AA342BC1F8AA00B9D4EE /* Assets.xcassets in Resources */,
+				D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */,
+				D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,11 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */,
+				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
+				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
+				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
