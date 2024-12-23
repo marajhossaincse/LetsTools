@@ -28,10 +28,9 @@ struct FBHomeScreen: View {
             HStack {
                 AsyncImage(url: URL(string: "https://picsum.photos/200")) { phase in
                     switch phase {
-                    
                     case .empty:
                         ProgressView()
-                  
+
                     case .success(let image):
                         image
                             .resizable()
@@ -39,10 +38,10 @@ struct FBHomeScreen: View {
                             .frame(width: 35, height: 30)
                             .clipShape(Circle())
                             .overlay(Circle())
-                    
+
                     case .failure:
                         Text("Failed to load image")
-                    
+
                     @unknown default:
                         EmptyView()
                     }
@@ -57,7 +56,7 @@ struct FBHomeScreen: View {
             }
 
             StoryCart()
-            
+
             NewsFeedItem()
         }
         .navigationBarBackButtonHidden(true)

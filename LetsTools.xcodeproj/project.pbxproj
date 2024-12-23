@@ -138,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
-				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
 			);
 			path = LetsClone;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 				D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */,
 				D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */,
 				D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */,
+				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
 			);
 			path = FacebookClone;
 			sourceTree = "<group>";
