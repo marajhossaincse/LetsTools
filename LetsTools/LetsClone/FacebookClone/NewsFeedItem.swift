@@ -69,6 +69,27 @@ struct NewsFeedItem: View {
                     .padding(.bottom, 12)
             }
             .background(.gray.opacity(0.4))
+
+            HStack(spacing: 10) {
+                ZStack {
+                    Image(systemName: "heart.circle.fill")
+                        .foregroundColor(.red)
+                        .offset(x: 10, y: 0)
+
+                    Image(systemName: "hand.thumbsup.circle.fill")
+                        .foregroundColor(.blue)
+                        .overlay(
+                            Circle().stroke(Color.white, lineWidth: 2)
+                        )
+                }
+
+                Text("9.7K")
+
+                Spacer()
+
+                Text("1.5K comments")
+                Text("231K shares")
+            }
         }
     }
 }
