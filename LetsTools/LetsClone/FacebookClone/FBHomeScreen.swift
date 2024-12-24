@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FBHomeScreen: View {
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             HStack {
                 Text("Facebook")
                     .font(.custom("Helvetica Neue Bold", size: 25))
@@ -55,7 +55,7 @@ struct FBHomeScreen: View {
                     .foregroundStyle(.green)
             }
 
-            StoryCart()
+            StoryAndReelTab()
 
             NewsFeedItem()
         }
