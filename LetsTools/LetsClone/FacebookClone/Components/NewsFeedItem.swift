@@ -91,6 +91,7 @@ struct NewsFeedItem: View {
                 Text("231K shares")
             }
         }
+        .background(Color.white)
     }
 }
 

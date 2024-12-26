@@ -47,6 +47,7 @@ struct StoryAndReelTab: View {
 
             Spacer()
         }
+        .background(Color.white)
     }
 }
 

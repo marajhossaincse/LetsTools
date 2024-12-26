@@ -21,6 +21,8 @@
 		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
 		D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */; };
 		D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B258412D193EDC00A23D57 /* ReelsCart.swift */; };
+		D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */; };
+		D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B4797A2D1A7FE600E84423 /* StatusCard.swift */; };
 		D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */; };
 		D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryAndReelTab.swift; sourceTree = "<group>"; };
 		D9B258412D193EDC00A23D57 /* ReelsCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCart.swift; sourceTree = "<group>"; };
+		D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
+		D9B4797A2D1A7FE600E84423 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
 		D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeScreen.swift; sourceTree = "<group>"; };
 		D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,19 @@
 			path = LetsMask;
 			sourceTree = "<group>";
 		};
+		D9B479772D1A7F1400E84423 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */,
+				D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */,
+				D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */,
+				D9B258412D193EDC00A23D57 /* ReelsCart.swift */,
+				D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */,
+				D9B4797A2D1A7FE600E84423 /* StatusCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D9B73E2F2CF4C86000A63E04 /* LetsClone */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,11 +166,8 @@
 		D9B73E302CF4CA6100A63E04 /* FacebookClone */ = {
 			isa = PBXGroup;
 			children = (
+				D9B479772D1A7F1400E84423 /* Components */,
 				D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */,
-				D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */,
-				D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */,
-				D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */,
-				D9B258412D193EDC00A23D57 /* ReelsCart.swift */,
 				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
 			);
 			path = FacebookClone;
@@ -238,8 +252,10 @@
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */,
+				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
+				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
