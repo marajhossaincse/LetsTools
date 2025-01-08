@@ -26,10 +26,9 @@ struct FBHomeScreen: View {
 
                 Spacer()
 
-                #warning("Repeat this view by using a foreach loop")
-                NewsFeedItem()
-                NewsFeedItem()
-                NewsFeedItem()
+                ForEach(1...Int.random(in: 2...5), id: \.self) { _ in
+                    NewsFeedItem()
+                }
             }
             .background(Color.gray.opacity(0.4))
         }
