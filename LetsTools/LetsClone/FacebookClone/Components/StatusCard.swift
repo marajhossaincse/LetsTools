@@ -10,7 +10,7 @@ import SwiftUI
 struct StatusCard: View {
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: "https://picsum.photos/200")) { phase in
+            AsyncImage(url: URL(string: "https://picsum.photos/200/300")) { phase in
                 switch phase {
                 case .empty:
                     ProgressView()
@@ -19,9 +19,9 @@ struct StatusCard: View {
                     image
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 35, height: 30)
+                        .frame(width: 40, height: 40)
                         .clipShape(Circle())
-                        .overlay(Circle())
+                        .overlay(Circle().fill(.clear))
 
                 case .failure:
                     Text("Failed to load image")
@@ -39,6 +39,7 @@ struct StatusCard: View {
                 .foregroundStyle(.green)
         } // Status Box
         .background(Color.white)
+        .padding()
     }
 }
 

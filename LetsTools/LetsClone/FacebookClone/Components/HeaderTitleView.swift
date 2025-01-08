@@ -22,6 +22,7 @@ struct HeaderTitleView: View {
             createIcon(withIcon: "message.fill")
         }
         .background(Color.white)
+        .padding()
     }
 }
 

@@ -41,6 +41,7 @@ struct StoryAndReelTab: View {
 
             if selectedTab == 0 {
                 StoryCart()
+                    .padding(.horizontal)
             } else {
                 ReelsCart()
             }
@@ -53,4 +54,5 @@ struct StoryAndReelTab: View {
 
 #Preview {
     StoryAndReelTab()
+        .padding(.vertical)
 }

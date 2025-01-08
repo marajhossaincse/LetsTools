@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct StoryCart: View {
+    
+    
     let users = [
         ("John", "https://picsum.photos/id/10/200/300", true),
         ("Anna", "https://picsum.photos/id/11/200/300", false),
@@ -29,16 +31,14 @@ struct StoryCart: View {
                                 .frame(width: 155, height: 250)
                         }
 
-                        ZStack(alignment: .bottomTrailing) {
+                        ZStack(alignment: .center) {
                             // Profile Image
-                            AsyncImage(url: URL(string: user.1)) { profileImage in
+                            AsyncImage(url: URL(string: "https://picsum.photos/200")) { profileImage in
                                 profileImage
                                     .resizable()
                                     .scaledToFill()
-                                    .frame(width: 55, height: 55)
+                                    .frame(width: 50, height: 50)
                                     .clipShape(Circle())
-                                    .overlay(Circle())
-
                             } placeholder: {
                                 Circle()
                                     .scaledToFill()
@@ -51,12 +51,16 @@ struct StoryCart: View {
                                 Circle()
                                     .strokeBorder(.white)
                                     .background(Circle().fill(.green))
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 15, height: 15)
+                                    .frame(width: 55, height: 55, alignment: .bottomTrailing)
                             }
                         }
+                        .padding(.top, 5)
+                        .padding(.leading, 5)
                     }
                 }
             }
+            .padding(.leading, 6)
         }
     }
 }

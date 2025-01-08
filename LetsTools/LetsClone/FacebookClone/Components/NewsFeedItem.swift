@@ -9,27 +9,27 @@ import SwiftUI
 
 struct NewsFeedItem: View {
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .center, spacing: 15) {
+        VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .center) {
                 Image(.BBC)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 28, height: 28)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                    .shadow(radius: 5)
+                    .shadow(radius: 4)
+                    .padding(.horizontal, 8)
 
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: .leading, spacing: 12) {
                     Text("BBC NEWS")
                         .font(.headline)
 
                     HStack {
                         Text("2d")
-                        Text(".")
+                        Text("•")
                         Image(systemName: "globe.europe.africa.fill")
                     }
                 }
-                .padding(.leading, 10)
 
                 Spacer()
 
@@ -39,12 +39,15 @@ struct NewsFeedItem: View {
             }
 
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia bibendum pellentesque.")
+                .padding(.vertical, 8)
+                .padding(.horizontal, 6)
 
             VStack(alignment: .leading, spacing: 10) {
                 AsyncImage(url: URL(string: "https://picsum.photos/200")) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
+                            .frame(width: .infinity, height: .infinity, alignment: .center)
 
                     case .success(let image):
                         image
@@ -63,14 +66,17 @@ struct NewsFeedItem: View {
                 Text("BBC NEWS")
                     .font(.system(.body))
                     .foregroundStyle(.gray)
+                    .padding(.horizontal, 6)
 
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
                     .font(.system(.callout, weight: .bold))
-                    .padding(.bottom, 12)
+//                    .padding(.bottom, 12)
+                    .padding(.vertical, 4)
+                    .padding(.horizontal, 6)
             }
             .background(.gray.opacity(0.4))
 
-            HStack(spacing: 10) {
+            HStack(spacing: 8) {
                 ZStack {
                     Image(systemName: "heart.circle.fill")
                         .foregroundColor(.red)
@@ -90,6 +96,7 @@ struct NewsFeedItem: View {
                 Text("1.5K comments")
                 Text("231K shares")
             }
+            .padding(.vertical, 8)
         }
         .background(Color.white)
     }
