@@ -23,6 +23,12 @@ struct StoryAndReelTab: View {
                         .padding()
                         .foregroundColor(selectedTab == 0 ? .blue : .gray)
                         .frame(maxWidth: .infinity)
+                        .overlay(
+                            Rectangle()
+                                .frame(width: 160, height: 2)
+                                .foregroundColor(selectedTab == 0 ? .blue : .white),
+                            alignment: .bottom
+                        )
                 }
 
                 Button(
@@ -35,6 +41,12 @@ struct StoryAndReelTab: View {
                         .padding()
                         .foregroundColor(selectedTab == 1 ? .blue : .gray)
                         .frame(maxWidth: .infinity)
+                        .overlay(
+                            Rectangle()
+                                .frame(width: 155, height: 2)
+                                .foregroundColor(selectedTab == 1 ? .blue : .white),
+                            alignment: .bottom
+                        )
                 }
             }
             .padding(.top)
