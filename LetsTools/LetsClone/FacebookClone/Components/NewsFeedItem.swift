@@ -18,13 +18,12 @@ struct NewsFeedItem: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .shadow(radius: 4)
-                    .padding(.horizontal, 8)
 
-                VStack(alignment: .leading, spacing: 12) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text("BBC NEWS")
                         .font(.headline)
 
-                    HStack {
+                    HStack(spacing: 0) {
                         Text("2d")
                         Text("•")
                         Image(systemName: "globe.europe.africa.fill")
@@ -37,17 +36,20 @@ struct NewsFeedItem: View {
 
                 Image(systemName: "xmark")
             }
+            .padding(.top, 8)
+            .padding(.horizontal, 16)
 
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia bibendum pellentesque.")
+            Text("Lorem ipsum dolor sit amet, consectetur adipi elit. Nunc lacinia bibendum pellentesque.")
                 .padding(.vertical, 8)
-                .padding(.horizontal, 6)
+                .padding(.horizontal, 16)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
             VStack(alignment: .leading, spacing: 10) {
                 AsyncImage(url: URL(string: "https://picsum.photos/200")) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
-                            .frame(width: .infinity, height: .infinity, alignment: .center)
+                            .frame(width: .infinity, height: 300, alignment: .center)
 
                     case .success(let image):
                         image
@@ -66,13 +68,14 @@ struct NewsFeedItem: View {
                 Text("BBC NEWS")
                     .font(.system(.body))
                     .foregroundStyle(.gray)
-                    .padding(.horizontal, 6)
+                    .padding(.horizontal, 16)
+                    .frame(maxWidth: .infinity, alignment: .leading)
 
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+                Text("Lorem ipsum dolor sit amet, consect adipis elit.")
                     .font(.system(.callout, weight: .bold))
-//                    .padding(.bottom, 12)
-                    .padding(.vertical, 4)
-                    .padding(.horizontal, 6)
+                    .padding(.bottom, 8)
+                    .padding(.leading, 16)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             .background(.gray.opacity(0.4))
 
@@ -80,7 +83,7 @@ struct NewsFeedItem: View {
                 ZStack {
                     Image(systemName: "heart.circle.fill")
                         .foregroundColor(.red)
-                        .offset(x: 10, y: 0)
+                        .offset(x: 14)
 
                     Image(systemName: "hand.thumbsup.circle.fill")
                         .foregroundColor(.blue)
@@ -90,13 +93,16 @@ struct NewsFeedItem: View {
                 }
 
                 Text("9.7K")
+                    .padding(.leading, 8)
 
                 Spacer()
 
                 Text("1.5K comments")
                 Text("231K shares")
+                    .padding(.trailing, 12)
             }
             .padding(.vertical, 8)
+            .padding(.horizontal, 16)
         }
         .background(Color.white)
     }
