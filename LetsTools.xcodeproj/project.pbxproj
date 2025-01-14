@@ -16,6 +16,7 @@
 		CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */; };
 		CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */; };
 		CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB73EAE2BF918A60095F300 /* MaskScreen.swift */; };
+		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
 		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
 		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
@@ -38,6 +39,7 @@
 		CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
 		CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCardScreen.swift; sourceTree = "<group>"; };
 		CEB73EAE2BF918A60095F300 /* MaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskScreen.swift; sourceTree = "<group>"; };
+		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
 		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 			path = LetsMask;
 			sourceTree = "<group>";
 		};
+		D92AC1612D3634380020B56D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D92AC1622D3634530020B56D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D9B479772D1A7F1400E84423 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		D9B73E302CF4CA6100A63E04 /* FacebookClone */ = {
 			isa = PBXGroup;
 			children = (
+				D92AC1612D3634380020B56D /* Models */,
 				D9B479772D1A7F1400E84423 /* Components */,
 				D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */,
 				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
@@ -250,6 +261,7 @@
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
+				D92AC1632D3634530020B56D /* User.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */,
 				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
