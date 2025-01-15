@@ -49,7 +49,7 @@ struct NewsFeedItem: View {
                     switch phase {
                     case .empty:
                         ProgressView()
-                            .frame(width: .infinity, height: 300, alignment: .center)
+                            .frame(width: 400, height: 300)
 
                     case .success(let image):
                         image
