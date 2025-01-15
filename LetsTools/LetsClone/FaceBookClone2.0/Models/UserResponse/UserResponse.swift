@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct UserResponse: Identifiable {
+    var id = UUID()
+    var name: String
+    var imageUrl: String
+    var isOnline: Bool
+}

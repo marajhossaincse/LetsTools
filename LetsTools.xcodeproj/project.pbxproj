@@ -16,6 +16,14 @@
 		CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */; };
 		CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */; };
 		CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB73EAE2BF918A60095F300 /* MaskScreen.swift */; };
+		D9084E1A2D3825360036E871 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E192D3825360036E871 /* FeedData.swift */; };
+		D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E1B2D38253F0036E871 /* FeedResponse.swift */; };
+		D9084E202D3831BF0036E871 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E1F2D3831BF0036E871 /* UserData.swift */; };
+		D9084E222D3831D00036E871 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E212D3831D00036E871 /* UserResponse.swift */; };
+		D9084E242D3832220036E871 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E232D3832220036E871 /* StoryData.swift */; };
+		D9084E262D3832320036E871 /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E252D3832320036E871 /* StoryResponse.swift */; };
+		D9084E2A2D38415A0036E871 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E292D38415A0036E871 /* Colors.swift */; };
+		D9084E2E2D38417F0036E871 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* HomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
 		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
@@ -39,6 +47,14 @@
 		CE8D1EC92BC29A7E00263EDC /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
 		CE9D07822C1DF5D8004C1813 /* CutCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCardScreen.swift; sourceTree = "<group>"; };
 		CEB73EAE2BF918A60095F300 /* MaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskScreen.swift; sourceTree = "<group>"; };
+		D9084E192D3825360036E871 /* FeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		D9084E1B2D38253F0036E871 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		D9084E1F2D3831BF0036E871 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		D9084E212D3831D00036E871 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		D9084E232D3832220036E871 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
+		D9084E252D3832320036E871 /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
+		D9084E292D38415A0036E871 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D9084E2D2D38417F0036E871 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
 		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +160,69 @@
 			path = LetsMask;
 			sourceTree = "<group>";
 		};
+		D9084E162D3823310036E871 /* FaceBookClone2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E172D38250C0036E871 /* Models */,
+				D9084E272D38405C0036E871 /* Page */,
+				D9084E282D38406C0036E871 /* Themes */,
+			);
+			path = FaceBookClone2.0;
+			sourceTree = "<group>";
+		};
+		D9084E172D38250C0036E871 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E182D3825110036E871 /* FeedResponse */,
+				D9084E1D2D3825440036E871 /* StoryResponse */,
+				D9084E1E2D3831910036E871 /* UserResponse */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9084E182D3825110036E871 /* FeedResponse */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E192D3825360036E871 /* FeedData.swift */,
+				D9084E1B2D38253F0036E871 /* FeedResponse.swift */,
+			);
+			path = FeedResponse;
+			sourceTree = "<group>";
+		};
+		D9084E1D2D3825440036E871 /* StoryResponse */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E232D3832220036E871 /* StoryData.swift */,
+				D9084E252D3832320036E871 /* StoryResponse.swift */,
+			);
+			path = StoryResponse;
+			sourceTree = "<group>";
+		};
+		D9084E1E2D3831910036E871 /* UserResponse */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E1F2D3831BF0036E871 /* UserData.swift */,
+				D9084E212D3831D00036E871 /* UserResponse.swift */,
+			);
+			path = UserResponse;
+			sourceTree = "<group>";
+		};
+		D9084E272D38405C0036E871 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E2D2D38417F0036E871 /* HomeView.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		D9084E282D38406C0036E871 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				D9084E292D38415A0036E871 /* Colors.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		D92AC1612D3634380020B56D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
+				D9084E162D3823310036E871 /* FaceBookClone2.0 */,
 			);
 			path = LetsClone;
 			sourceTree = "<group>";
@@ -255,21 +335,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */,
+				D9084E2A2D38415A0036E871 /* Colors.swift in Sources */,
 				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
+				D9084E2E2D38417F0036E871 /* HomeView.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
+				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				D92AC1632D3634530020B56D /* User.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */,
+				D9084E222D3831D00036E871 /* UserResponse.swift in Sources */,
 				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
+				D9084E242D3832220036E871 /* StoryData.swift in Sources */,
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
 				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
+				D9084E1A2D3825360036E871 /* FeedData.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
+				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
+				D9084E202D3831BF0036E871 /* UserData.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct StoryResponse: Identifiable {
+    var id = UUID()
+    var user: UserResponse
+    var imageUrl: String
+}
