@@ -7,7 +7,7 @@
 
 import Foundation
 
-let feeds: [FeedResponse] = [
+let feedData: [FeedResponse] = [
     FeedResponse(
         user: userData[0],
         type: 1,
@@ -22,7 +22,7 @@ let feeds: [FeedResponse] = [
             "https://picsum.photos/600/400?random=2"
         ],
         dateAgo: "2 hours ago",
-        companyProfileUrl: "https://naturedaily.com"
+        companyProfileUrl: "https://picsum.photos/200/300"
     ),
     FeedResponse(
         user: userData[1],
@@ -34,10 +34,12 @@ let feeds: [FeedResponse] = [
         totalComments: "980",
         totalShares: "450",
         imageUrls: [
-            "https://picsum.photos/600/400?random=3"
+            "https://picsum.photos/600/400?random=3",
+            "https://picsum.photos/600/400?random=2",
+            "https://picsum.photos/600/400?random=2"
         ],
         dateAgo: "1 day ago",
-        companyProfileUrl: "https://globalnews.com"
+        companyProfileUrl: "https://picsum.photos/200/300"
     ),
     FeedResponse(
         user: userData[2],
@@ -67,6 +69,6 @@ let feeds: [FeedResponse] = [
             "https://picsum.photos/600/400?random=5"
         ],
         dateAgo: "10 minutes ago",
-        companyProfileUrl: "https://sportstoday.com"
+        companyProfileUrl: "https://picsum.photos/200/300"
     )
 ]
