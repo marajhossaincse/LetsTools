@@ -5,6 +5,7 @@
 //  Created by Maraz Hossain on 1/21/25.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct UberRidesScreen: View {
@@ -14,6 +15,8 @@ struct UberRidesScreen: View {
         PastSearchesView()
 
         SuggestionsView()
+
+        OffersAndPromotionsView()
     }
 }
 
@@ -169,11 +172,11 @@ struct SuggestionsView: View {
                     Text("Promo")
                         .font(.headline)
                         .fontWeight(.semibold)
-                        .padding(6)
+                        .padding(2)
                         .foregroundStyle(Color.white)
                         .background(Color.green)
                         .cornerRadius(6)
-                        .offset(x: 0, y: -26)
+                        .offset(x: 0, y: -16)
 
                     Button {} label: {
                         VStack {
@@ -218,5 +221,117 @@ struct SuggestionsView: View {
             }
         }
         .padding(.horizontal)
+    }
+}
+
+/// offers & promotions
+struct OffersAndPromotionsView: View {
+    let screenWidth = UIScreen.main.bounds.width
+
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack {
+                HStack {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est.")
+                            .font(.callout)
+                            .fontWeight(.semibold)
+
+                        Text("Lorem ipsum 09/03.")
+                            .padding(.bottom, 4)
+                            .font(.callout)
+                            .foregroundStyle(Color.black.opacity(0.5))
+
+                        Button {} label: {
+                            Text("Lorem Ipsum")
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 4)
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color.black)
+                                .background(Capsule().fill(Color.white))
+                        }
+                    }
+                    .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
+                    .padding(.horizontal)
+
+                    KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: screenWidth * (1.5/5))
+                }
+                .frame(width: screenWidth * (4/5), height: 150)
+                .background(Color.green.opacity(0.5))
+                .cornerRadius(12)
+
+                HStack {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est.")
+                            .font(.callout)
+                            .fontWeight(.semibold)
+
+                        Text("Lorem ipsum 09/03.")
+                            .padding(.bottom, 4)
+                            .font(.callout)
+                            .foregroundStyle(Color.black.opacity(0.5))
+
+                        Button {} label: {
+                            Text("Lorem Ipsum")
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 4)
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color.black)
+                                .background(Capsule().fill(Color.white))
+                        }
+                    }
+                    .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
+                    .padding(.horizontal)
+
+                    KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: screenWidth * (1.5/5))
+                }
+                .frame(width: screenWidth * (4/5), height: 150)
+                .background(Color.yellow.opacity(0.5))
+                .cornerRadius(12)
+
+                HStack {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est.")
+                            .font(.callout)
+                            .fontWeight(.semibold)
+
+                        Text("Lorem ipsum 09/03.")
+                            .padding(.bottom, 4)
+                            .font(.callout)
+                            .foregroundStyle(Color.black.opacity(0.5))
+
+                        Button {} label: {
+                            Text("Lorem Ipsum")
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 4)
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color.black)
+                                .background(Capsule().fill(Color.white))
+                        }
+                    }
+                    .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
+                    .padding(.horizontal)
+
+                    KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: screenWidth * (1.5/5))
+                }
+                .frame(width: screenWidth * (4/5), height: 150)
+                .background(Color.orange.opacity(0.5))
+                .cornerRadius(12)
+            }
+        }
+
+        .padding()
     }
 }
