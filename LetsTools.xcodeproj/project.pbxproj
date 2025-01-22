@@ -23,9 +23,15 @@
 		D9084E242D3832220036E871 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E232D3832220036E871 /* StoryData.swift */; };
 		D9084E262D3832320036E871 /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E252D3832320036E871 /* StoryResponse.swift */; };
 		D9084E2A2D38415A0036E871 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E292D38415A0036E871 /* Colors.swift */; };
-		D9084E2E2D38417F0036E871 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* HomeView.swift */; };
+		D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* FBHomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
+		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
+		D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */; };
+		D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */; };
+		D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */; };
+		D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */; };
+		D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */; };
 		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
 		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
 		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
@@ -55,8 +61,14 @@
 		D9084E232D3832220036E871 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		D9084E252D3832320036E871 /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
 		D9084E292D38415A0036E871 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		D9084E2D2D38417F0036E871 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D9084E2D2D38417F0036E871 /* FBHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
+		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
+		D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHomeView.swift; sourceTree = "<group>"; };
+		D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsXperiment.swift; sourceTree = "<group>"; };
+		D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryResponse.swift; sourceTree = "<group>"; };
+		D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryData.swift; sourceTree = "<group>"; };
 		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
 		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 				CE2F75242C42EAF200076DC3 /* LetsContainerMenu */,
 				D9B73E2F2CF4C86000A63E04 /* LetsClone */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
+				D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */,
 			);
 			path = LetsTools;
 			sourceTree = "<group>";
@@ -212,7 +225,7 @@
 		D9084E272D38405C0036E871 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				D9084E2D2D38417F0036E871 /* HomeView.swift */,
+				D9084E2D2D38417F0036E871 /* FBHomeView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -233,6 +246,42 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D971E4502D3ED891008F93D5 /* UberClone */ = {
+			isa = PBXGroup;
+			children = (
+				D971E4512D3ED8CC008F93D5 /* Models */,
+				D971E4522D3ED8E1008F93D5 /* Screens */,
+			);
+			path = UberClone;
+			sourceTree = "<group>";
+		};
+		D971E4512D3ED8CC008F93D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D971E45B2D3FBDD1008F93D5 /* RideHistory */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D971E4522D3ED8E1008F93D5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */,
+				D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */,
+				D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D971E45B2D3FBDD1008F93D5 /* RideHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */,
+				D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */,
+			);
+			path = RideHistory;
+			sourceTree = "<group>";
+		};
 		D9B479772D1A7F1400E84423 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +300,7 @@
 			children = (
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
 				D9084E162D3823310036E871 /* FaceBookClone2.0 */,
+				D971E4502D3ED891008F93D5 /* UberClone */,
 			);
 			path = LetsClone;
 			sourceTree = "<group>";
@@ -340,14 +390,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */,
+				D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */,
 				D9084E2A2D38415A0036E871 /* Colors.swift in Sources */,
 				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
-				D9084E2E2D38417F0036E871 /* HomeView.swift in Sources */,
+				D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */,
+				D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
+				D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
+				D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				D92AC1632D3634530020B56D /* User.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
@@ -362,6 +416,8 @@
 				D9084E1A2D3825360036E871 /* FeedData.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
+				D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */,
+				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
 				D9084E202D3831BF0036E871 /* UserData.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
 			);

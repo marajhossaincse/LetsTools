@@ -32,7 +32,7 @@ struct HomeScreen: View {
                 FBHomeScreen()
             }
             NavigationLink("Facebook Clone 2") {
-                HomeView()
+                FBHomeView()
             }
         }
         .navigationTitle("Lets Tools")
