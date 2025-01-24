@@ -5,16 +5,19 @@
 //  Created by Maraz Hossain on 1/21/25.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct UberEatsScreen: View {
     var body: some View {
-        VStack(spacing: 0) {
+        ScrollView(showsIndicators: false) {
             DeliveryAddressView()
 
             EatsSearchBarView()
 
             FoodOptionsView()
+
+            FeaturedRestaurantsView()
         }
     }
 }
@@ -56,8 +59,9 @@ struct DeliveryAddressView: View {
                     .scaledToFit()
                     .frame(width: 12, height: 12)
             }
-            .padding()
-            .background(Capsule().fill(.gray.opacity(0.3)))
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .background(Capsule().fill(.gray.opacity(0.15)))
 
             Image(systemName: "cart")
                 .resizable()
@@ -188,7 +192,7 @@ struct FoodOptionsView: View {
                 .padding(.horizontal)
             }
         }
-        .padding(.vertical)
+        .padding(.vertical, 8)
 
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 14) {
@@ -228,6 +232,92 @@ struct FoodOptionsView: View {
             }
         }
         .foregroundStyle(Color.black)
-        .padding(.horizontal)
+        .padding(.leading)
+        .padding(.vertical, 4)
+    }
+}
+
+struct FeaturedRestaurantsView: View {
+    let restaurants = featuredRestaurants
+
+    let screenWidth = UIScreen.main.bounds.width
+
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                Text("Featured on UberEats")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+
+                Spacer()
+
+                Image(systemName: "arrow.right")
+                    .fontWeight(.semibold)
+                    .padding(6)
+                    .background(Circle().fill(.gray.opacity(0.2)))
+            }
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top) {
+                    ForEach(restaurants, id: \.self) { restaurant in
+                        VStack(alignment: .leading) {
+                            ZStack(alignment: .topLeading) {
+                                KFImage(URL(string: restaurant.image))
+                                    .resizable()
+                                    .scaledToFill()
+                                    .cornerRadius(12)
+                                    .frame(height: 100)
+                                    .clipped()
+
+                                if restaurant.isOfferAvailable {
+                                    Text("Offers Available")
+                                        .font(.caption)
+                                        .fontWeight(.bold)
+                                        .foregroundStyle(.white)
+                                        .padding(.vertical, 6)
+                                        .padding(.horizontal, 8)
+                                        .background(.green)
+                                        .padding(.top)
+                                }
+                            }
+
+                            HStack {
+                                Text(restaurant.name)
+                                    .font(.headline)
+                                    .fontWeight(.semibold)
+
+                                Spacer()
+
+                                Text("\(restaurant.rating, specifier: "%.1f")")
+                                    .font(.caption)
+                                    .fontWeight(.semibold)
+                                    .padding(6)
+                                    .background(Capsule().fill(.gray.opacity(0.3)))
+                            }
+                            .padding(.horizontal)
+
+                            HStack {
+                                Image(systemName: "info.circle")
+
+                                Text("$\(restaurant.deliveryFee, specifier: "%.1f") Delivery Fee-")
+                                    .font(.caption)
+                                    .fontWeight(.semibold)
+
+                                Text("\(restaurant.deliveryTime.lowerBound)-\(restaurant.deliveryTime.upperBound) mins")
+                                    .font(.caption2)
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(.gray)
+                            }
+                            .padding(.horizontal)
+                        }
+                        .frame(width: screenWidth * (4 / 5), height: 170)
+                        .background(.gray.opacity(0.15))
+                        .cornerRadius(12)
+                    }
+                }
+            }
+            .padding(.top)
+        }
+        .padding()
     }
 }
