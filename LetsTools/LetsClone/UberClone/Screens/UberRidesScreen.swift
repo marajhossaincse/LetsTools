@@ -10,13 +10,17 @@ import SwiftUI
 
 struct UberRidesScreen: View {
     var body: some View {
-        SearchBarView()
+        VStack(spacing: 0) {
+            RidesSearchBarView()
 
-        PastSearchesView()
+            PastSearchesView()
 
-        SuggestionsView()
+            SuggestionsView()
 
-        OffersAndPromotionsView()
+            OffersAndPromotionsView()
+
+            Spacer()
+        }
     }
 }
 
@@ -25,7 +29,7 @@ struct UberRidesScreen: View {
 }
 
 /// destination search bar
-struct SearchBarView: View {
+struct RidesSearchBarView: View {
     @State var searchedText: String = ""
 
     var body: some View {
@@ -129,7 +133,7 @@ struct SuggestionsView: View {
             HStack(alignment: .center) {
                 // ride
                 Button {} label: {
-                    VStack {
+                    VStack(spacing: 0) {
                         Image(systemName: "car.side")
                             .resizable()
                             .scaledToFill()
@@ -149,7 +153,7 @@ struct SuggestionsView: View {
 
                 // 2-wheels
                 Button {} label: {
-                    VStack {
+                    VStack(spacing: 0) {
                         Image(systemName: "bicycle")
                             .resizable()
                             .scaledToFill()
@@ -179,7 +183,7 @@ struct SuggestionsView: View {
                         .offset(x: 0, y: -16)
 
                     Button {} label: {
-                        VStack {
+                        VStack(spacing: 0) {
                             Image(systemName: "key.horizontal")
                                 .resizable()
                                 .scaledToFill()
@@ -201,7 +205,7 @@ struct SuggestionsView: View {
 
                 Button {} label: {
                     // reserves
-                    VStack {
+                    VStack(spacing: 0) {
                         Image(systemName: "calendar.badge.clock")
                             .resizable()
                             .scaledToFill()
@@ -230,7 +234,7 @@ struct OffersAndPromotionsView: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack {
+            HStack {
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
                         Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est.")
@@ -253,14 +257,13 @@ struct OffersAndPromotionsView: View {
                         }
                     }
                     .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
-                    .padding(.horizontal)
 
                     KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
                         .resizable()
                         .scaledToFill()
                         .frame(width: screenWidth * (1.5/5))
                 }
-                .frame(width: screenWidth * (4/5), height: 150)
+                .frame(width: screenWidth * (4/5), height: 170)
                 .background(Color.green.opacity(0.5))
                 .cornerRadius(12)
 
@@ -286,14 +289,13 @@ struct OffersAndPromotionsView: View {
                         }
                     }
                     .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
-                    .padding(.horizontal)
 
                     KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
                         .resizable()
                         .scaledToFill()
                         .frame(width: screenWidth * (1.5/5))
                 }
-                .frame(width: screenWidth * (4/5), height: 150)
+                .frame(width: screenWidth * (4/5), height: 170)
                 .background(Color.yellow.opacity(0.5))
                 .cornerRadius(12)
 
@@ -319,19 +321,18 @@ struct OffersAndPromotionsView: View {
                         }
                     }
                     .frame(width: screenWidth * (4/5) - screenWidth * (1.5/5))
-                    .padding(.horizontal)
 
                     KFImage(URL(string: "https://picsum.photos/id/\(Int.random(in: 1...10))/200/300"))
                         .resizable()
                         .scaledToFill()
                         .frame(width: screenWidth * (1.5/5))
                 }
-                .frame(width: screenWidth * (4/5), height: 150)
+                .frame(width: screenWidth * (4/5), height: 170)
                 .background(Color.orange.opacity(0.5))
                 .cornerRadius(12)
             }
+            .padding(.vertical)
         }
-
-        .padding()
+        .padding(.horizontal)
     }
 }

@@ -34,6 +34,10 @@ struct HomeScreen: View {
             NavigationLink("Facebook Clone 2") {
                 FBHomeView()
             }
+            
+            NavigationLink("Uber Clone ") {
+                UberHomeView()
+            }
         }
         .navigationTitle("Lets Tools")
         .navigationBarTitleDisplayMode(.inline)
