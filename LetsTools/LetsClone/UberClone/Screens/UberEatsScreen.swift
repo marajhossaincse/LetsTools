@@ -18,6 +18,8 @@ struct UberEatsScreen: View {
             FoodOptionsView()
 
             FeaturedRestaurantsView()
+
+            RecommendedRestaurantsView()
         }
     }
 }
@@ -256,6 +258,7 @@ struct FeaturedRestaurantsView: View {
                     .padding(6)
                     .background(Circle().fill(.gray.opacity(0.2)))
             }
+            .padding(.horizontal)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top) {
@@ -315,9 +318,100 @@ struct FeaturedRestaurantsView: View {
                         .cornerRadius(12)
                     }
                 }
+                .padding(.leading)
+            }
+            .padding(.top)
+
+            Divider()
+                .padding(.top, 16)
+                .frame(maxWidth: .infinity)
+        }
+        .padding(.top)
+    }
+}
+
+struct RecommendedRestaurantsView: View {
+    let restaurants = recommendedRestaurants
+
+    let screenWidth = UIScreen.main.bounds.width
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                Text("Places you might like")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+
+                Spacer()
+
+                Image(systemName: "arrow.right")
+                    .fontWeight(.semibold)
+                    .padding(6)
+                    .background(Circle().fill(.gray.opacity(0.2)))
+            }
+            .padding(.horizontal)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top) {
+                    ForEach(restaurants, id: \.self) { restaurant in
+                        VStack(alignment: .leading) {
+                            ZStack(alignment: .topLeading) {
+                                KFImage(URL(string: restaurant.image))
+                                    .resizable()
+                                    .scaledToFill()
+                                    .cornerRadius(12)
+                                    .frame(height: 100)
+                                    .clipped()
+
+                                if restaurant.isOfferAvailable {
+                                    Text("Offers Available")
+                                        .font(.caption)
+                                        .fontWeight(.bold)
+                                        .foregroundStyle(.white)
+                                        .padding(.vertical, 6)
+                                        .padding(.horizontal, 8)
+                                        .background(.green)
+                                        .padding(.top)
+                                }
+                            }
+
+                            HStack {
+                                Text(restaurant.name)
+                                    .font(.headline)
+                                    .fontWeight(.semibold)
+
+                                Spacer()
+
+                                Text("\(restaurant.rating, specifier: "%.1f")")
+                                    .font(.caption)
+                                    .fontWeight(.semibold)
+                                    .padding(6)
+                                    .background(Capsule().fill(.gray.opacity(0.3)))
+                            }
+                            .padding(.horizontal)
+
+                            HStack {
+                                Image(systemName: "info.circle")
+
+                                Text("$\(restaurant.deliveryFee, specifier: "%.1f") Delivery Fee-")
+                                    .font(.caption)
+                                    .fontWeight(.semibold)
+
+                                Text("\(restaurant.deliveryTime.lowerBound)-\(restaurant.deliveryTime.upperBound) mins")
+                                    .font(.caption2)
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(.gray)
+                            }
+                            .padding(.horizontal)
+                        }
+                        .frame(width: screenWidth * (4 / 5), height: 170)
+                        .background(.gray.opacity(0.15))
+                        .cornerRadius(12)
+                    }
+                }
+                .padding(.leading)
             }
             .padding(.top)
         }
-        .padding()
+        .padding(.top, 8)
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UberRidesScreen: View {
     var body: some View {
-        VStack(spacing: 0) {
+        ScrollView {
             RidesSearchBarView()
 
             PastSearchesView()
@@ -243,7 +243,7 @@ struct OffersAndPromotionsView: View {
 
                         Text("Lorem ipsum 09/03.")
                             .padding(.bottom, 4)
-                            .font(.callout)
+                            .font(.footnote)
                             .foregroundStyle(Color.black.opacity(0.5))
 
                         Button {} label: {
@@ -275,7 +275,7 @@ struct OffersAndPromotionsView: View {
 
                         Text("Lorem ipsum 09/03.")
                             .padding(.bottom, 4)
-                            .font(.callout)
+                            .font(.footnote)
                             .foregroundStyle(Color.black.opacity(0.5))
 
                         Button {} label: {
@@ -307,7 +307,7 @@ struct OffersAndPromotionsView: View {
 
                         Text("Lorem ipsum 09/03.")
                             .padding(.bottom, 4)
-                            .font(.callout)
+                            .font(.footnote)
                             .foregroundStyle(Color.black.opacity(0.5))
 
                         Button {} label: {
@@ -332,7 +332,7 @@ struct OffersAndPromotionsView: View {
                 .cornerRadius(12)
             }
             .padding(.vertical)
+            .padding(.leading)
         }
-        .padding(.horizontal)
     }
 }

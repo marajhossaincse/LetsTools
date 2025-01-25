@@ -43,6 +43,9 @@
 		D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B4797A2D1A7FE600E84423 /* StatusCard.swift */; };
 		D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */; };
 		D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */; };
+		D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DC8E222D43D27500216077 /* RecommendedRestaurantResponse.swift */; };
+		D9DC8E252D43D28100216077 /* RecommendedRestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DC8E242D43D28100216077 /* RecommendedRestaurantData.swift */; };
+		D9E39D192D44D03C00C106DD /* TabWithLineIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39D182D44D03C00C106DD /* TabWithLineIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,9 @@
 		D9B4797A2D1A7FE600E84423 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
 		D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeScreen.swift; sourceTree = "<group>"; };
 		D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCart.swift; sourceTree = "<group>"; };
+		D9DC8E222D43D27500216077 /* RecommendedRestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedRestaurantResponse.swift; sourceTree = "<group>"; };
+		D9DC8E242D43D28100216077 /* RecommendedRestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedRestaurantData.swift; sourceTree = "<group>"; };
+		D9E39D182D44D03C00C106DD /* TabWithLineIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabWithLineIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 			children = (
 				CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */,
 				CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */,
+				D9E39D172D44CFF500C106DD /* LetsTab */,
 				CE31AA3F2BC20C6A00B9D4EE /* LetsRingProgressBar */,
 				CEB73EAD2BF918840095F300 /* LetsMask */,
 				CE2F02572BFA2F3600EE3919 /* LetsLoading */,
@@ -262,8 +269,9 @@
 		D971E4512D3ED8CC008F93D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D97870392D439C3400012B8D /* FeaturedRestaurants */,
 				D971E45B2D3FBDD1008F93D5 /* RideHistory */,
+				D97870392D439C3400012B8D /* FeaturedRestaurants */,
+				D9DC8E212D43D24500216077 /* RecommendedRestarants */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +336,23 @@
 				D983A2F22D169B9900A7C3CE /* Media.xcassets */,
 			);
 			path = FacebookClone;
+			sourceTree = "<group>";
+		};
+		D9DC8E212D43D24500216077 /* RecommendedRestarants */ = {
+			isa = PBXGroup;
+			children = (
+				D9DC8E242D43D28100216077 /* RecommendedRestaurantData.swift */,
+				D9DC8E222D43D27500216077 /* RecommendedRestaurantResponse.swift */,
+			);
+			path = RecommendedRestarants;
+			sourceTree = "<group>";
+		};
+		D9E39D172D44CFF500C106DD /* LetsTab */ = {
+			isa = PBXGroup;
+			children = (
+				D9E39D182D44D03C00C106DD /* TabWithLineIndicator.swift */,
+			);
+			path = LetsTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +433,7 @@
 				D978703B2D439C5300012B8D /* FeaturedRestaurantResponse.swift in Sources */,
 				D9084E2A2D38415A0036E871 /* Colors.swift in Sources */,
 				D978703D2D439C5E00012B8D /* FeaturedRestaurantData.swift in Sources */,
+				D9E39D192D44D03C00C106DD /* TabWithLineIndicator.swift in Sources */,
 				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
 				D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */,
 				D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */,
@@ -415,6 +441,7 @@
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
+				D9DC8E252D43D28100216077 /* RecommendedRestaurantData.swift in Sources */,
 				D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */,
@@ -426,6 +453,7 @@
 				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
 				D9084E242D3832220036E871 /* StoryData.swift in Sources */,
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
+				D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
 				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,

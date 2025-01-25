@@ -26,36 +26,52 @@ struct UberHomeView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
-                HStack(spacing: 0) {
-                    ForEach(tabs, id: \.self) { tab in
-                        Button {
-                            withAnimation {
-                                selectedIndex = tab
-                            }
-                        } label: {
-                            VStack(spacing: 8) {
+                VStack(spacing: 0) {
+                    HStack {
+                        ForEach(tabs, id: \.self) { tab in
+                            Spacer()
+
+                            HStack {
+                                Image(systemName: tab == "Rides" ? "car.circle" : "fork.knife.circle")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .fontWeight(.semibold)
+                                    .frame(width: 24, height: 24)
+
                                 Text(tab)
                                     .font(.headline)
                                     .fontWeight(.semibold)
-                                    .foregroundStyle(selectedIndex == tab ? Color.black : .black.opacity(0.8))
-                                if selectedIndex == tab {
-                                    Rectangle()
-                                        .frame(width: width / 2, height: 2)
-                                        .foregroundStyle(Color.red)
-                                        .matchedGeometryEffect(id: "underline", in: underlineAnimation)
-                                } else {
-                                    Rectangle()
-                                        .frame(
-                                            width: width / 2,
-                                            height: 2
-                                        )
-                                        .foregroundStyle(Color.blue)
+                            }
+                            .padding(.horizontal)
+                            .font(.headline)
+                            .fontWeight(.semibold)
+                            .onTapGesture {
+                                withAnimation {
+                                    selectedIndex = tab
                                 }
                             }
+                            Spacer()
                         }
-                        .frame(maxWidth: .infinity)
-                        .padding()
                     }
+                    .frame(maxWidth: .infinity)
+
+                    ZStack(alignment: .topLeading) {
+                        Rectangle()
+                            .foregroundColor(Color.gray.opacity(0.5))
+                            .frame(width: UIScreen.main.bounds.width, height: 2)
+
+                        ForEach(tabs, id: \.self) { tab in
+                            if selectedIndex == tab { // Compare with the string value
+                                Rectangle()
+                                    .frame(width: UIScreen.main.bounds.width / CGFloat(tabs.count), height: 2)
+                                    .foregroundStyle(Color.black)
+                                    .matchedGeometryEffect(id: "underline", in: underlineAnimation)
+                                    .offset(x: CGFloat(tabs.firstIndex(of: tab) ?? 0) * (UIScreen.main.bounds.width / CGFloat(tabs.count))) // Calculate offset based on string index
+                            }
+                        }
+                    }
+                    .frame(height: 2)
+                    .padding(.top, 8)
                 }
             }
         }
