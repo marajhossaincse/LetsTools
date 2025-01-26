@@ -22,7 +22,7 @@
 		D9084E222D3831D00036E871 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E212D3831D00036E871 /* UserResponse.swift */; };
 		D9084E242D3832220036E871 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E232D3832220036E871 /* StoryData.swift */; };
 		D9084E262D3832320036E871 /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E252D3832320036E871 /* StoryResponse.swift */; };
-		D9084E2A2D38415A0036E871 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E292D38415A0036E871 /* Colors.swift */; };
+		D9084E2A2D38415A0036E871 /* FBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E292D38415A0036E871 /* FBColors.swift */; };
 		D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* FBHomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
@@ -37,6 +37,19 @@
 		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
 		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
 		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
+		D98582612D46092700DDBA94 /* EatsCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582602D46092700DDBA94 /* EatsCategoryResponse.swift */; };
+		D98582632D46093300DDBA94 /* EatsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582622D46093300DDBA94 /* EatsData.swift */; };
+		D98582662D46099900DDBA94 /* EatsRestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582652D46099900DDBA94 /* EatsRestaurantResponse.swift */; };
+		D98582682D4609A500DDBA94 /* EatsRestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582672D4609A500DDBA94 /* EatsRestaurantData.swift */; };
+		D985826B2D460A9700DDBA94 /* RidesAdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985826A2D460A9700DDBA94 /* RidesAdsResponse.swift */; };
+		D985826D2D460A9F00DDBA94 /* RidesAdsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985826C2D460A9F00DDBA94 /* RidesAdsData.swift */; };
+		D98582722D460B7700DDBA94 /* RidesHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582712D460B7700DDBA94 /* RidesHistoryResponse.swift */; };
+		D98582742D460B7F00DDBA94 /* RidesHistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582732D460B7F00DDBA94 /* RidesHistoryData.swift */; };
+		D98582762D460B9000DDBA94 /* RidesSuggestionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582752D460B9000DDBA94 /* RidesSuggestionResponse.swift */; };
+		D98582782D460B9900DDBA94 /* RidesSuggestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582772D460B9900DDBA94 /* RidesSuggestionData.swift */; };
+		D985827A2D4610E300DDBA94 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582792D4610E300DDBA94 /* TabData.swift */; };
+		D985827C2D4610ED00DDBA94 /* TabResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985827B2D4610ED00DDBA94 /* TabResponse.swift */; };
+		D98582812D4614DA00DDBA94 /* UberColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582802D4614DA00DDBA94 /* UberColors.swift */; };
 		D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */; };
 		D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B258412D193EDC00A23D57 /* ReelsCart.swift */; };
 		D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */; };
@@ -65,7 +78,7 @@
 		D9084E212D3831D00036E871 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		D9084E232D3832220036E871 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		D9084E252D3832320036E871 /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
-		D9084E292D38415A0036E871 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D9084E292D38415A0036E871 /* FBColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBColors.swift; sourceTree = "<group>"; };
 		D9084E2D2D38417F0036E871 /* FBHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
@@ -79,6 +92,19 @@
 		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
 		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		D98582602D46092700DDBA94 /* EatsCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatsCategoryResponse.swift; sourceTree = "<group>"; };
+		D98582622D46093300DDBA94 /* EatsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatsData.swift; sourceTree = "<group>"; };
+		D98582652D46099900DDBA94 /* EatsRestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatsRestaurantResponse.swift; sourceTree = "<group>"; };
+		D98582672D4609A500DDBA94 /* EatsRestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatsRestaurantData.swift; sourceTree = "<group>"; };
+		D985826A2D460A9700DDBA94 /* RidesAdsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesAdsResponse.swift; sourceTree = "<group>"; };
+		D985826C2D460A9F00DDBA94 /* RidesAdsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesAdsData.swift; sourceTree = "<group>"; };
+		D98582712D460B7700DDBA94 /* RidesHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHistoryResponse.swift; sourceTree = "<group>"; };
+		D98582732D460B7F00DDBA94 /* RidesHistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHistoryData.swift; sourceTree = "<group>"; };
+		D98582752D460B9000DDBA94 /* RidesSuggestionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesSuggestionResponse.swift; sourceTree = "<group>"; };
+		D98582772D460B9900DDBA94 /* RidesSuggestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesSuggestionData.swift; sourceTree = "<group>"; };
+		D98582792D4610E300DDBA94 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
+		D985827B2D4610ED00DDBA94 /* TabResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabResponse.swift; sourceTree = "<group>"; };
+		D98582802D4614DA00DDBA94 /* UberColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberColors.swift; sourceTree = "<group>"; };
 		D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryAndReelTab.swift; sourceTree = "<group>"; };
 		D9B258412D193EDC00A23D57 /* ReelsCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCart.swift; sourceTree = "<group>"; };
 		D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
@@ -244,7 +270,7 @@
 		D9084E282D38406C0036E871 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				D9084E292D38415A0036E871 /* Colors.swift */,
+				D9084E292D38415A0036E871 /* FBColors.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -255,6 +281,16 @@
 				D92AC1622D3634530020B56D /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D970A5B22D46085000CF76B8 /* UberClone2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D985827F2D4614A300DDBA94 /* Themes */,
+				D985827D2D4613EA00DDBA94 /* Models */,
+				D985827E2D46145F00DDBA94 /* Screens */,
+			);
+			path = UberClone2.0;
 			sourceTree = "<group>";
 		};
 		D971E4502D3ED891008F93D5 /* UberClone */ = {
@@ -304,6 +340,88 @@
 			path = FeaturedRestaurants;
 			sourceTree = "<group>";
 		};
+		D985825F2D4608EC00DDBA94 /* EatsCategoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98582622D46093300DDBA94 /* EatsData.swift */,
+				D98582602D46092700DDBA94 /* EatsCategoryResponse.swift */,
+			);
+			path = EatsCategoryModel;
+			sourceTree = "<group>";
+		};
+		D98582642D46096600DDBA94 /* EatsRestaurantModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98582672D4609A500DDBA94 /* EatsRestaurantData.swift */,
+				D98582652D46099900DDBA94 /* EatsRestaurantResponse.swift */,
+			);
+			path = EatsRestaurantModel;
+			sourceTree = "<group>";
+		};
+		D98582692D460A6000DDBA94 /* RidesAdsModel */ = {
+			isa = PBXGroup;
+			children = (
+				D985826C2D460A9F00DDBA94 /* RidesAdsData.swift */,
+				D985826A2D460A9700DDBA94 /* RidesAdsResponse.swift */,
+			);
+			path = RidesAdsModel;
+			sourceTree = "<group>";
+		};
+		D985826E2D460AD300DDBA94 /* RidesHistoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98582732D460B7F00DDBA94 /* RidesHistoryData.swift */,
+				D98582712D460B7700DDBA94 /* RidesHistoryResponse.swift */,
+			);
+			path = RidesHistoryModel;
+			sourceTree = "<group>";
+		};
+		D985826F2D460AF400DDBA94 /* RidesSuggestionModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98582772D460B9900DDBA94 /* RidesSuggestionData.swift */,
+				D98582752D460B9000DDBA94 /* RidesSuggestionResponse.swift */,
+			);
+			path = RidesSuggestionModel;
+			sourceTree = "<group>";
+		};
+		D98582702D460B2E00DDBA94 /* TabModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98582792D4610E300DDBA94 /* TabData.swift */,
+				D985827B2D4610ED00DDBA94 /* TabResponse.swift */,
+			);
+			path = TabModel;
+			sourceTree = "<group>";
+		};
+		D985827D2D4613EA00DDBA94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D985825F2D4608EC00DDBA94 /* EatsCategoryModel */,
+				D98582642D46096600DDBA94 /* EatsRestaurantModel */,
+				D98582692D460A6000DDBA94 /* RidesAdsModel */,
+				D985826E2D460AD300DDBA94 /* RidesHistoryModel */,
+				D985826F2D460AF400DDBA94 /* RidesSuggestionModel */,
+				D98582702D460B2E00DDBA94 /* TabModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D985827E2D46145F00DDBA94 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D985827F2D4614A300DDBA94 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				D98582802D4614DA00DDBA94 /* UberColors.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		D9B479772D1A7F1400E84423 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +441,7 @@
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
 				D9084E162D3823310036E871 /* FaceBookClone2.0 */,
 				D971E4502D3ED891008F93D5 /* UberClone */,
+				D970A5B22D46085000CF76B8 /* UberClone2.0 */,
 			);
 			path = LetsClone;
 			sourceTree = "<group>";
@@ -430,23 +549,34 @@
 			files = (
 				CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */,
 				D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */,
+				D985826D2D460A9F00DDBA94 /* RidesAdsData.swift in Sources */,
 				D978703B2D439C5300012B8D /* FeaturedRestaurantResponse.swift in Sources */,
-				D9084E2A2D38415A0036E871 /* Colors.swift in Sources */,
+				D9084E2A2D38415A0036E871 /* FBColors.swift in Sources */,
+				D98582782D460B9900DDBA94 /* RidesSuggestionData.swift in Sources */,
 				D978703D2D439C5E00012B8D /* FeaturedRestaurantData.swift in Sources */,
+				D98582762D460B9000DDBA94 /* RidesSuggestionResponse.swift in Sources */,
 				D9E39D192D44D03C00C106DD /* TabWithLineIndicator.swift in Sources */,
 				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
+				D98582742D460B7F00DDBA94 /* RidesHistoryData.swift in Sources */,
 				D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */,
+				D98582722D460B7700DDBA94 /* RidesHistoryResponse.swift in Sources */,
 				D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
+				D985827C2D4610ED00DDBA94 /* TabResponse.swift in Sources */,
 				D9DC8E252D43D28100216077 /* RecommendedRestaurantData.swift in Sources */,
 				D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
+				D985827A2D4610E300DDBA94 /* TabData.swift in Sources */,
 				D92AC1632D3634530020B56D /* User.swift in Sources */,
+				D98582812D4614DA00DDBA94 /* UberColors.swift in Sources */,
+				D98582682D4609A500DDBA94 /* EatsRestaurantData.swift in Sources */,
+				D98582612D46092700DDBA94 /* EatsCategoryResponse.swift in Sources */,
+				D98582632D46093300DDBA94 /* EatsData.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */,
 				D9084E222D3831D00036E871 /* UserResponse.swift in Sources */,
@@ -456,12 +586,14 @@
 				D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
 				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
+				D98582662D46099900DDBA94 /* EatsRestaurantResponse.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
 				D9084E1A2D3825360036E871 /* FeedData.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
 				D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */,
 				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
+				D985826B2D460A9700DDBA94 /* RidesAdsResponse.swift in Sources */,
 				D9084E202D3831BF0036E871 /* UserData.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
 			);
