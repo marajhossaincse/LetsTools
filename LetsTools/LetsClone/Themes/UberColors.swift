@@ -1,8 +1,8 @@
 //
-//  Colors.swift
+//  UberColors.swift
 //  LetsTools
 //
-//  Created by Maraz Hossain on 1/16/25.
+//  Created by Maraz Hossain on 1/26/25.
 //
 
 import SwiftUI
@@ -21,7 +21,7 @@ extension Color {
         self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
     }
 
-    // Color
+    // facebook colors
     static let primaryColor = Color(hex: "#3875E9")
     static let successColor = Color(hex: "#69BA6A")
     static let dangerColor = Color(hex: "#DA3948")
@@ -29,4 +29,13 @@ extension Color {
     static let backgroundColor = Color(hex: "C5C9CC")
     static let grayBackgroundColor = Color(hex: "E9EAEF")
     static let newsBackgroundColor = Color(hex: "F6F8FA")
+
+    // uber colors
+    static let uberPrimaryColor = Color(hex: "#0B8344")
+    static let uberCardColor = Color(hex: "#F3F3F3")
+
+    static let uberBlackColor = Color(hex: "#000000")
+    static let uberWhiteColor = Color(hex: "#FFFFFF")
+
+    static let uberTextFieldColor = Color(hex: "#E8E8E8")
 }

@@ -22,9 +22,9 @@
 		D9084E222D3831D00036E871 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E212D3831D00036E871 /* UserResponse.swift */; };
 		D9084E242D3832220036E871 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E232D3832220036E871 /* StoryData.swift */; };
 		D9084E262D3832320036E871 /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E252D3832320036E871 /* StoryResponse.swift */; };
-		D9084E2A2D38415A0036E871 /* FBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E292D38415A0036E871 /* FBColors.swift */; };
 		D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* FBHomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
+		D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93452B92D46336F008769C3 /* UberCloneHomeView.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
 		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
 		D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */; };
@@ -78,9 +78,9 @@
 		D9084E212D3831D00036E871 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		D9084E232D3832220036E871 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		D9084E252D3832320036E871 /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
-		D9084E292D38415A0036E871 /* FBColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBColors.swift; sourceTree = "<group>"; };
 		D9084E2D2D38417F0036E871 /* FBHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D93452B92D46336F008769C3 /* UberCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneHomeView.swift; sourceTree = "<group>"; };
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
 		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
 		D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHomeView.swift; sourceTree = "<group>"; };
@@ -217,7 +217,6 @@
 			children = (
 				D9084E172D38250C0036E871 /* Models */,
 				D9084E272D38405C0036E871 /* Page */,
-				D9084E282D38406C0036E871 /* Themes */,
 			);
 			path = FaceBookClone2.0;
 			sourceTree = "<group>";
@@ -267,14 +266,6 @@
 			path = Page;
 			sourceTree = "<group>";
 		};
-		D9084E282D38406C0036E871 /* Themes */ = {
-			isa = PBXGroup;
-			children = (
-				D9084E292D38415A0036E871 /* FBColors.swift */,
-			);
-			path = Themes;
-			sourceTree = "<group>";
-		};
 		D92AC1612D3634380020B56D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,9 +277,8 @@
 		D970A5B22D46085000CF76B8 /* UberClone2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				D985827F2D4614A300DDBA94 /* Themes */,
-				D985827D2D4613EA00DDBA94 /* Models */,
 				D985827E2D46145F00DDBA94 /* Screens */,
+				D985827D2D4613EA00DDBA94 /* Models */,
 			);
 			path = UberClone2.0;
 			sourceTree = "<group>";
@@ -410,6 +400,7 @@
 		D985827E2D46145F00DDBA94 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D93452B92D46336F008769C3 /* UberCloneHomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -438,6 +429,7 @@
 		D9B73E2F2CF4C86000A63E04 /* LetsClone */ = {
 			isa = PBXGroup;
 			children = (
+				D985827F2D4614A300DDBA94 /* Themes */,
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
 				D9084E162D3823310036E871 /* FaceBookClone2.0 */,
 				D971E4502D3ED891008F93D5 /* UberClone */,
@@ -551,7 +543,6 @@
 				D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */,
 				D985826D2D460A9F00DDBA94 /* RidesAdsData.swift in Sources */,
 				D978703B2D439C5300012B8D /* FeaturedRestaurantResponse.swift in Sources */,
-				D9084E2A2D38415A0036E871 /* FBColors.swift in Sources */,
 				D98582782D460B9900DDBA94 /* RidesSuggestionData.swift in Sources */,
 				D978703D2D439C5E00012B8D /* FeaturedRestaurantData.swift in Sources */,
 				D98582762D460B9000DDBA94 /* RidesSuggestionResponse.swift in Sources */,
@@ -594,6 +585,7 @@
 				D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */,
 				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
 				D985826B2D460A9700DDBA94 /* RidesAdsResponse.swift in Sources */,
+				D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */,
 				D9084E202D3831BF0036E871 /* UserData.swift in Sources */,
 				CE31AA3E2BC1F8E400B9D4EE /* HomeScreen.swift in Sources */,
 			);
