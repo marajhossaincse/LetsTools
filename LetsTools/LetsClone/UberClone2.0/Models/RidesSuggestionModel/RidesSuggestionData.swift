@@ -9,33 +9,23 @@ import Foundation
 
 let ridesSuggestionsData = [
     RidesSuggestionResponse(
-        name: "City Tour Express",
-        imageUrl: "https://picsum.photos/200",
-        isPromoted: true
-    ),
-    RidesSuggestionResponse(
-        name: "Luxury Ride",
+        name: "Ride",
         imageUrl: "https://picsum.photos/200",
         isPromoted: false
     ),
     RidesSuggestionResponse(
-        name: "Airport Shuttle",
-        imageUrl: "https://picsum.photos/200",
-        isPromoted: true
-    ),
-    RidesSuggestionResponse(
-        name: "Night Owl Ride",
+        name: "2-Wheels",
         imageUrl: "https://picsum.photos/200",
         isPromoted: false
     ),
     RidesSuggestionResponse(
-        name: "Weekend Getaway",
+        name: "Rental Cars",
         imageUrl: "https://picsum.photos/200",
         isPromoted: true
     ),
     RidesSuggestionResponse(
-        name: "VIP Experience",
+        name: "Reserve",
         imageUrl: "https://picsum.photos/200",
-        isPromoted: true
+        isPromoted: false
     )
 ]

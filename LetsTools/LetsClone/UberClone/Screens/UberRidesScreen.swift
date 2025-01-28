@@ -11,15 +11,17 @@ import SwiftUI
 struct UberRidesScreen: View {
     var body: some View {
         ScrollView {
-            RidesSearchBarView()
+            VStack {
+                RidesSearchBarView()
 
-            PastSearchesView()
+                PastSearchesView()
 
-            SuggestionsView()
+                RidesSuggestionsView()
 
-            OffersAndPromotionsView()
+                OffersAndPromotionsView()
 
-            Spacer()
+                Spacer()
+            }
         }
     }
 }
@@ -112,7 +114,7 @@ struct PastSearchesView: View {
 }
 
 /// suggestions
-struct SuggestionsView: View {
+struct RidesSuggestionsView: View {
     let screenWidth = UIScreen.main.bounds.width
 
     var body: some View {
