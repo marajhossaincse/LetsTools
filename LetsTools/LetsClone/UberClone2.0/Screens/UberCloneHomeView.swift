@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UberCloneHomeView: View {
     var tabs: [TabResponse] = tabsData
-    @State private var selectedIndex = 1
+    @State private var selectedIndex = 0
     // for smooth animation
     @Namespace private var animation
     var width = UIScreen.main.bounds.width / 2
@@ -73,11 +73,10 @@ struct UberCloneHomeView: View {
                                 VStack(spacing: 6) {
                                     // icon and text
                                     HStack(spacing: 12) {
-                                        Image(tabs[index].imageUrl)
+                                        KFImage(URL(string: tabs[index].imageUrl))
                                             .resizable()
                                             .scaledToFill()
                                             .frame(width: 38, height: 38)
-                                            .background(.gray.opacity(0.5))
 
                                         Text(tabs[index].title)
                                             .font(.title3)
@@ -231,10 +230,11 @@ struct SuggestionRowView: View {
             ZStack(alignment: .top) {
                 // item
                 VStack {
-                    Image(suggestion.imageUrl)
+                    KFImage(URL(string: suggestion.imageUrl))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 55, height: 40)
+                        .frame(width: 40, height: 40)
+                        .padding(.bottom, 8)
 
                     Text(suggestion.name)
                         .font(.footnote)
@@ -253,7 +253,7 @@ struct SuggestionRowView: View {
                         .padding(.horizontal, 6)
                         .background(Color.uberPrimaryColor)
                         .clipShape(RoundedRectangle(cornerRadius: 6))
-                        .offset(x: 0, y: -20)
+                        .offset(x: 0, y: -15)
                 }
             }
         }
@@ -270,10 +270,9 @@ struct AdsView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
                 ForEach(adsData) { ads in
-                    Image(ads.imageUrl)
+                    KFImage(URL(string: ads.imageUrl))
                         .resizable()
                         .scaledToFill()
-                        .background(Color.gray)
                         .frame(width: width - 50, height: 150)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                 }

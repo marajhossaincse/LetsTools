@@ -10,10 +10,10 @@ import Foundation
 let tabsData = [
     TabResponse(
         title: "Rides",
-        imageUrl: "https://picsum.photos/200"
+        imageUrl: "https://picsum.photos/id/22/200"
     ),
     TabResponse(
         title: "Eats",
-        imageUrl: "https://picsum.photos/200"
+        imageUrl: "https://picsum.photos/id/23/200"
     )
 ]

@@ -8,9 +8,9 @@
 import Foundation
 
 let ridesAdsData = [
-    RidesAdsResponse(imageUrl: "https://picsum.photos/200"),
-    RidesAdsResponse(imageUrl: "https://picsum.photos/200"),
-    RidesAdsResponse(imageUrl: "https://picsum.photos/200"),
-    RidesAdsResponse(imageUrl: "https://picsum.photos/200"),
-    RidesAdsResponse(imageUrl: "https://picsum.photos/200")
+    RidesAdsResponse(imageUrl: "https://picsum.photos/id/13/200"),
+    RidesAdsResponse(imageUrl: "https://picsum.photos/id/14/200"),
+    RidesAdsResponse(imageUrl: "https://picsum.photos/id/15/200"),
+    RidesAdsResponse(imageUrl: "https://picsum.photos/id/16/200"),
+    RidesAdsResponse(imageUrl: "https://picsum.photos/id/17/200")
 ]
