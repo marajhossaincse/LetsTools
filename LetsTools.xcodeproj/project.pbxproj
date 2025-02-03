@@ -32,8 +32,11 @@
 		D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */; };
 		D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */; };
 		D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */; };
+		D976FE9E2D4F770700BB6F92 /* VideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976FE9D2D4F770700BB6F92 /* VideoDetailsView.swift */; };
 		D978703B2D439C5300012B8D /* FeaturedRestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978703A2D439C5300012B8D /* FeaturedRestaurantResponse.swift */; };
 		D978703D2D439C5E00012B8D /* FeaturedRestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978703C2D439C5E00012B8D /* FeaturedRestaurantData.swift */; };
+		D97F2FA82D4CE14600ADD73E /* VideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F2FA72D4CE14600ADD73E /* VideoResponse.swift */; };
+		D97F2FAA2D4CE14E00ADD73E /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F2FA92D4CE14E00ADD73E /* VideoData.swift */; };
 		D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */; };
 		D983A2F12D169B5800A7C3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F02D169B5800A7C3CE /* Assets.xcassets */; };
 		D983A2F32D169B9900A7C3CE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D983A2F22D169B9900A7C3CE /* Media.xcassets */; };
@@ -50,6 +53,8 @@
 		D985827A2D4610E300DDBA94 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582792D4610E300DDBA94 /* TabData.swift */; };
 		D985827C2D4610ED00DDBA94 /* TabResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985827B2D4610ED00DDBA94 /* TabResponse.swift */; };
 		D98582812D4614DA00DDBA94 /* UberColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98582802D4614DA00DDBA94 /* UberColors.swift */; };
+		D99FA4132D4D174C003FD43A /* ShortsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FA4122D4D174C003FD43A /* ShortsResponse.swift */; };
+		D99FA4152D4D1755003FD43A /* ShortsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FA4142D4D1755003FD43A /* ShortsData.swift */; };
 		D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */; };
 		D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B258412D193EDC00A23D57 /* ReelsCart.swift */; };
 		D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */; };
@@ -90,8 +95,11 @@
 		D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsXperiment.swift; sourceTree = "<group>"; };
 		D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryResponse.swift; sourceTree = "<group>"; };
 		D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryData.swift; sourceTree = "<group>"; };
+		D976FE9D2D4F770700BB6F92 /* VideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsView.swift; sourceTree = "<group>"; };
 		D978703A2D439C5300012B8D /* FeaturedRestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRestaurantResponse.swift; sourceTree = "<group>"; };
 		D978703C2D439C5E00012B8D /* FeaturedRestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRestaurantData.swift; sourceTree = "<group>"; };
+		D97F2FA72D4CE14600ADD73E /* VideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponse.swift; sourceTree = "<group>"; };
+		D97F2FA92D4CE14E00ADD73E /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 		D983A2EE2D1699FB00A7C3CE /* NewsFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedItem.swift; sourceTree = "<group>"; };
 		D983A2F02D169B5800A7C3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D983A2F22D169B9900A7C3CE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -108,6 +116,8 @@
 		D98582792D4610E300DDBA94 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
 		D985827B2D4610ED00DDBA94 /* TabResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabResponse.swift; sourceTree = "<group>"; };
 		D98582802D4614DA00DDBA94 /* UberColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberColors.swift; sourceTree = "<group>"; };
+		D99FA4122D4D174C003FD43A /* ShortsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsResponse.swift; sourceTree = "<group>"; };
+		D99FA4142D4D1755003FD43A /* ShortsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsData.swift; sourceTree = "<group>"; };
 		D9B2583F2D193EAC00A23D57 /* StoryAndReelTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryAndReelTab.swift; sourceTree = "<group>"; };
 		D9B258412D193EDC00A23D57 /* ReelsCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCart.swift; sourceTree = "<group>"; };
 		D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
@@ -345,6 +355,24 @@
 			path = FeaturedRestaurants;
 			sourceTree = "<group>";
 		};
+		D97F2FA52D4CE0E700ADD73E /* VideoCategoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9F4E40D2D4C9E4300C17ED8 /* VideoCategoriesData.swift */,
+				D9F4E40B2D4C9E2800C17ED8 /* VideoCategoriesResponse.swift */,
+			);
+			path = VideoCategoryModel;
+			sourceTree = "<group>";
+		};
+		D97F2FA62D4CE0FF00ADD73E /* VideoModel */ = {
+			isa = PBXGroup;
+			children = (
+				D97F2FA92D4CE14E00ADD73E /* VideoData.swift */,
+				D97F2FA72D4CE14600ADD73E /* VideoResponse.swift */,
+			);
+			path = VideoModel;
+			sourceTree = "<group>";
+		};
 		D985825F2D4608EC00DDBA94 /* EatsCategoryModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +456,15 @@
 			path = Themes;
 			sourceTree = "<group>";
 		};
+		D99FA4112D4D173C003FD43A /* ShortsModel */ = {
+			isa = PBXGroup;
+			children = (
+				D99FA4142D4D1755003FD43A /* ShortsData.swift */,
+				D99FA4122D4D174C003FD43A /* ShortsResponse.swift */,
+			);
+			path = ShortsModel;
+			sourceTree = "<group>";
+		};
 		D9B479772D1A7F1400E84423 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,8 +522,9 @@
 		D9F4E4072D4C962200C17ED8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D9F4E40D2D4C9E4300C17ED8 /* VideoCategoriesData.swift */,
-				D9F4E40B2D4C9E2800C17ED8 /* VideoCategoriesResponse.swift */,
+				D99FA4112D4D173C003FD43A /* ShortsModel */,
+				D97F2FA52D4CE0E700ADD73E /* VideoCategoryModel */,
+				D97F2FA62D4CE0FF00ADD73E /* VideoModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -495,6 +533,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F4E4092D4C965900C17ED8 /* YTHomeView.swift */,
+				D976FE9D2D4F770700BB6F92 /* VideoDetailsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -577,6 +616,8 @@
 				D9F4E40A2D4C965900C17ED8 /* YTHomeView.swift in Sources */,
 				D985826D2D460A9F00DDBA94 /* RidesAdsData.swift in Sources */,
 				D978703B2D439C5300012B8D /* FeaturedRestaurantResponse.swift in Sources */,
+				D97F2FAA2D4CE14E00ADD73E /* VideoData.swift in Sources */,
+				D976FE9E2D4F770700BB6F92 /* VideoDetailsView.swift in Sources */,
 				D98582782D460B9900DDBA94 /* RidesSuggestionData.swift in Sources */,
 				D978703D2D439C5E00012B8D /* FeaturedRestaurantData.swift in Sources */,
 				D98582762D460B9000DDBA94 /* RidesSuggestionResponse.swift in Sources */,
@@ -590,15 +631,18 @@
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
 				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
+				D99FA4132D4D174C003FD43A /* ShortsResponse.swift in Sources */,
 				D9F4E40C2D4C9E2800C17ED8 /* VideoCategoriesResponse.swift in Sources */,
 				D985827C2D4610ED00DDBA94 /* TabResponse.swift in Sources */,
 				D9DC8E252D43D28100216077 /* RecommendedRestaurantData.swift in Sources */,
 				D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */,
+				D99FA4152D4D1755003FD43A /* ShortsData.swift in Sources */,
 				CE8D1ECA2BC29A7E00263EDC /* RingProgressBarScreen.swift in Sources */,
 				D9F4E40E2D4C9E4300C17ED8 /* VideoCategoriesData.swift in Sources */,
 				D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */,
 				CE31AA302BC1F8A800B9D4EE /* LetsToolsApp.swift in Sources */,
 				D985827A2D4610E300DDBA94 /* TabData.swift in Sources */,
+				D97F2FA82D4CE14600ADD73E /* VideoResponse.swift in Sources */,
 				D92AC1632D3634530020B56D /* User.swift in Sources */,
 				D98582812D4614DA00DDBA94 /* UberColors.swift in Sources */,
 				D98582682D4609A500DDBA94 /* EatsRestaurantData.swift in Sources */,
