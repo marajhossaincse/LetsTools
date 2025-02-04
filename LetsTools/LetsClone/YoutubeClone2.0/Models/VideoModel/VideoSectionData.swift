@@ -20,7 +20,7 @@ let videoSectionData: [VideoSectionResponse] = [
         channelSubscribers: "150K",
         totalViews: "1.2M",
         totalLikes: "120K",
-        publishedAt: "2024-01-15T12:00:00Z",
+        publishedAt: "3 days ago",
         totalComments: "500",
         lastCommentString: "Great tutorial! Learned a lot, thanks!",
         lastCommentImgUrl: "https://example.com/commenter1.jpg"
@@ -37,7 +37,7 @@ let videoSectionData: [VideoSectionResponse] = [
         channelSubscribers: "500K",
         totalViews: "3.5M",
         totalLikes: "250K",
-        publishedAt: "2024-02-01T08:00:00Z",
+        publishedAt: "1 week ago",
         totalComments: "1.2K",
         lastCommentString: "I agree, the camera is amazing on this model!",
         lastCommentImgUrl: "https://example.com/commenter2.jpg"
@@ -54,7 +54,7 @@ let videoSectionData: [VideoSectionResponse] = [
         channelSubscribers: "1.2M",
         totalViews: "2.8M",
         totalLikes: "200K",
-        publishedAt: "2024-01-30T18:00:00Z",
+        publishedAt: "2 months ago",
         totalComments: "900",
         lastCommentString: "This was so much fun to watch! Tokyo is on my bucket list!",
         lastCommentImgUrl: "https://example.com/commenter3.jpg"

@@ -5,6 +5,7 @@
 //  Created by Maraz Hossain on 2/3/25.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct YTCloneHomeView: View {
@@ -17,7 +18,11 @@ struct YTCloneHomeView: View {
                         .padding()
 
                     // section 1
+                    SectionView()
+
                     // section 2
+                    ShortsSectionView()
+
                     // section 3
                     // section 4
                     // section 5
@@ -110,5 +115,159 @@ struct CloneCategoryButtonView: View {
                 }
             }
         }
+    }
+}
+
+struct SectionView: View {
+    var videos: [VideoSectionResponse] = videoSectionData
+    var body: some View {
+        LazyVStack(spacing: 32) {
+            ForEach(videos) { video in
+                VideoNormalView(video: video)
+            }
+        }
+    }
+}
+
+struct VideoNormalView: View {
+    var video: VideoSectionResponse
+
+    var body: some View {
+        VStack(spacing: 22) {
+            // thumbnail and duration
+            ZStack(alignment: .bottomTrailing) {
+                Image(video.thumbnailUrl)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 200)
+                    .background(.yellow)
+
+                Text(video.duration)
+                    .font(.footnote)
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 2)
+                    .background(Color.grayButtonColor.opacity(0.6))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding(.horizontal, 12)
+                    .padding(.bottom)
+                    .foregroundStyle(.white)
+            }
+            // content info
+            HStack(alignment: .top) {
+                // channel image url
+                KFImage(URL(string: video.channelImgUrl))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 46, height: 46)
+                    .background(.blue)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(.white.opacity(0.5)))
+                    .padding(.top, 5)
+
+                // title
+                // view and date
+                VStack(alignment: .leading) {
+                    Text(video.title)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .lineLimit(2)
+                        .foregroundStyle(.white)
+                        .multilineTextAlignment(.leading)
+
+                    Text("\(video.channelName) - \(video.totalViews) - \(video.publishedAt)")
+                        .font(.subheadline)
+                        .fontWeight(.regular)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .lineLimit(2)
+                }
+                Spacer()
+                // icon
+                Image(systemName: "ellipsis")
+                    .rotationEffect(.degrees(90))
+                    .padding(.top, 12)
+                    .foregroundStyle(.white)
+            }
+            .padding(.horizontal)
+        }
+    }
+}
+
+struct ShortsSectionView: View {
+    var videos: [VideoSectionResponse] = videoSectionData
+
+    /// grid item
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+
+    var body: some View {
+        VStack(spacing: 12) {
+            // text and logo shorts
+            HStack(spacing: 10) {
+                ZStack {
+                    Rectangle()
+                        .fill(.white)
+                        .frame(width: 20, height: 20)
+
+                    Image(systemName: "s.square.fill")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30)
+                        .foregroundStyle(.red)
+                }
+                Text("Shorts")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal)
+
+            // grid item
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(videos) { video in
+                    VideoShortView(video: video)
+                }
+            }
+            .padding(.horizontal, 12)
+        }
+        .padding(.bottom, 12)
+    }
+}
+
+struct VideoShortView: View {
+    var video: VideoSectionResponse
+
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            // thumbnail
+            Image(video.thumbnailUrl)
+                .resizable()
+                .scaledToFill()
+                .frame(width: UIScreen.main.bounds.width / 2 - 20, height: 240)
+                .background(.green.opacity(0.3))
+
+            // black overlay
+            Rectangle()
+                .fill(.black.opacity(0.1))
+                .frame(width: UIScreen.main.bounds.width / 2 - 20, height: 240)
+                .clipped()
+
+            // title
+            Text(video.title)
+                .font(.subheadline)
+                .foregroundStyle(.white)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
+                .padding(.bottom, 8)
+                .lineLimit(2)
+                .lineSpacing(-10)
+                .frame(width: UIScreen.main.bounds.width / 2 - 20)
+                .multilineTextAlignment(.leading)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .shadow(radius: 4)
     }
 }
