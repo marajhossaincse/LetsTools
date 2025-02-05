@@ -17,15 +17,11 @@ struct YTCloneHomeView: View {
                     CloneCategoryButtonView()
                         .padding()
 
-                    // section 1
+                    // video section
                     SectionView()
 
-                    // section 2
+                    // shorts section
                     ShortsSectionView()
-
-                    // section 3
-                    // section 4
-                    // section 5
                 }
             }
             // set logo and icons
@@ -123,7 +119,12 @@ struct SectionView: View {
     var body: some View {
         LazyVStack(spacing: 32) {
             ForEach(videos) { video in
-                VideoNormalView(video: video)
+
+                NavigationLink {
+                    VideoDetailView(video: video)
+                } label: {
+                    VideoNormalView(video: video)
+                }
             }
         }
     }
@@ -136,12 +137,12 @@ struct VideoNormalView: View {
         VStack(spacing: 22) {
             // thumbnail and duration
             ZStack(alignment: .bottomTrailing) {
-                Image(video.thumbnailUrl)
+                KFImage(URL(string: video.thumbnailUrl))
                     .resizable()
-                    .scaledToFill()
+                    .aspectRatio(contentMode: .fill)
                     .frame(maxWidth: .infinity)
                     .frame(height: 200)
-                    .background(.yellow)
+                    .clipped()
 
                 Text(video.duration)
                     .font(.footnote)
@@ -243,7 +244,7 @@ struct VideoShortView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             // thumbnail
-            Image(video.thumbnailUrl)
+            KFImage(URL(string: video.thumbnailUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width / 2 - 20, height: 240)

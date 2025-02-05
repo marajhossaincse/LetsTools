@@ -9,8 +9,11 @@ import Kingfisher
 import SwiftUI
 
 struct VideoDetailView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var video: VideoSectionResponse
     var videos: [VideoSectionResponse] = videoSectionData
+    
 
     var body: some View {
         NavigationStack {
@@ -33,12 +36,18 @@ struct VideoDetailView: View {
 
                 // thumbnail
                 ZStack(alignment: .topLeading) {
-                    Rectangle()
-                        .fill(.red)
-                        .frame(width: .infinity, height: 200)
+                    
+                    KFImage(URL(string: video.thumbnailUrl))
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 200)
+                        .clipped()
 
                     // back button
-                    Button {} label: {
+                    Button {
+                        dismiss()
+                    } label: {
                         Image(systemName: "chevron.down")
                             .resizable()
                             .scaledToFill()
@@ -48,6 +57,7 @@ struct VideoDetailView: View {
                     .padding()
                 }
             }
+            .navigationBarBackButtonHidden(true)
         }
         .preferredColorScheme(.dark)
     }
