@@ -23,6 +23,7 @@
 		D9084E242D3832220036E871 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E232D3832220036E871 /* StoryData.swift */; };
 		D9084E262D3832320036E871 /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E252D3832320036E871 /* StoryResponse.swift */; };
 		D9084E2E2D38417F0036E871 /* FBHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9084E2D2D38417F0036E871 /* FBHomeView.swift */; };
+		D913AADB2D53325400820A45 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913AADA2D53325400820A45 /* VideoDetailView.swift */; };
 		D92983C82D50A7130053E4DA /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92983C72D50A7130053E4DA /* CategoryResponse.swift */; };
 		D92983CA2D50A71A0053E4DA /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92983C92D50A71A0053E4DA /* CategoryData.swift */; };
 		D92983CD2D50A85C0053E4DA /* VideoSectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92983CC2D50A85C0053E4DA /* VideoSectionResponse.swift */; };
@@ -92,6 +93,7 @@
 		D9084E232D3832220036E871 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		D9084E252D3832320036E871 /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
 		D9084E2D2D38417F0036E871 /* FBHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeView.swift; sourceTree = "<group>"; };
+		D913AADA2D53325400820A45 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		D92983C72D50A7130053E4DA /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
 		D92983C92D50A71A0053E4DA /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		D92983CC2D50A85C0053E4DA /* VideoSectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSectionResponse.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				D92983D02D50B4110053E4DA /* YTCloneHomeView.swift */,
+				D913AADA2D53325400820A45 /* VideoDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -715,6 +718,7 @@
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
 				D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
+				D913AADB2D53325400820A45 /* VideoDetailView.swift in Sources */,
 				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
 				D98582662D46099900DDBA94 /* EatsRestaurantResponse.swift in Sources */,
 				CE31AA412BC20C9300B9D4EE /* RingProgressBar.swift in Sources */,
