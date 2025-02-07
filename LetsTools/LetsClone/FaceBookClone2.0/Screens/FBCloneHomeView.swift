@@ -8,7 +8,7 @@
 import Kingfisher
 import SwiftUI
 
-struct FBHomeView: View {
+struct FBCloneHomeView: View {
     /// set header to background white
     init() {
         // set the background color of the navigation bar
@@ -99,7 +99,7 @@ struct FBHomeView: View {
 }
 
 #Preview {
-    FBHomeView()
+    FBCloneHomeView()
 }
 
 struct ProfileWhatIsOnYourMindView: View {

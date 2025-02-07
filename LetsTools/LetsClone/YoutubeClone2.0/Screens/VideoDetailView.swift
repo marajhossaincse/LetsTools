@@ -10,10 +10,9 @@ import SwiftUI
 
 struct VideoDetailView: View {
     @Environment(\.dismiss) private var dismiss
-    
+
     var video: VideoSectionResponse
     var videos: [VideoSectionResponse] = videoSectionData
-    
 
     var body: some View {
         NavigationStack {
@@ -32,11 +31,10 @@ struct VideoDetailView: View {
                         }
                     }
                 }
-                .padding(.top, 220)
+                .padding(.top, 210)
 
                 // thumbnail
                 ZStack(alignment: .topLeading) {
-                    
                     KFImage(URL(string: video.thumbnailUrl))
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -78,12 +76,12 @@ struct ContentInfoView: View {
                     .font(.title3)
                     .fontWeight(.regular)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.label)
 
                 // total views and data
                 HStack {
                     Text("\(video.totalViews) \(video.publishedAt)")
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(Color.label.opacity(0.7))
 
                     Text("...more")
                 }
@@ -91,6 +89,7 @@ struct ContentInfoView: View {
                 .fontWeight(.regular)
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
+            .padding(.horizontal)
 
             // channel info
             HStack {
@@ -114,7 +113,7 @@ struct ContentInfoView: View {
                     Text(video.channelSubscribers)
                         .font(.subheadline)
                         .fontWeight(.regular)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(Color.label.opacity(0.7))
                 }
 
                 Spacer()
@@ -129,11 +128,12 @@ struct ContentInfoView: View {
                     }
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.label)
                 }
             }
+            .padding(.horizontal)
 
             // action button
             ActionButtonsView(video: video)
@@ -141,7 +141,6 @@ struct ContentInfoView: View {
             // last comment
             LastCommentView(video: video)
         }
-        .padding()
     }
 }
 
@@ -163,7 +162,7 @@ struct ActionButtonsView: View {
                             .fontWeight(.semibold)
 
                         Rectangle()
-                            .fill(.white.opacity(0.4))
+                            .fill(Color.systemBlack.opacity(0.4))
                             .frame(width: 1, height: 22)
                             .padding(.horizontal, 2)
 
@@ -173,10 +172,10 @@ struct ActionButtonsView: View {
                             .frame(width: 17, height: 17)
                     }
                     .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .padding(.vertical, 5)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
                 // share
@@ -193,9 +192,9 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
                 // remix
@@ -212,12 +211,12 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
-                // donwload
+                // download
                 Button {} label: {
                     HStack(spacing: 10) {
                         Image(systemName: "arrow.down.to.line")
@@ -231,9 +230,9 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
                 // clip
@@ -250,9 +249,9 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
                 // save
@@ -269,9 +268,9 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
 
                 // report
@@ -288,12 +287,13 @@ struct ActionButtonsView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .background(Color.grayButtonColor)
+                    .background(Color.systemGray4)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemBlack)
                 }
             }
         }
+        .padding(.leading)
     }
 }
 
@@ -310,7 +310,7 @@ struct LastCommentView: View {
 
                 Text(video.totalComments)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.5))
+                    .foregroundStyle(Color.systemBlack.opacity(0.5))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -326,14 +326,15 @@ struct LastCommentView: View {
 
                 Text(video.lastCommentString)
                     .font(.subheadline)
-                    .foregroundStyle(.white.opacity(0.8))
+                    .foregroundStyle(Color.systemBlack.opacity(0.8))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal)
         .padding(.vertical, 12)
-        .background(Color.grayButtonColor)
+        .background(Color.systemGray4)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(.horizontal)
     }
 }

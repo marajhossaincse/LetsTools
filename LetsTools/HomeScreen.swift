@@ -32,15 +32,28 @@ struct HomeScreen: View {
                 FBHomeScreen()
             }
             NavigationLink("Facebook Clone 2") {
-                FBHomeView()
+//                FBHomeView()
             }
-            
-            NavigationLink("Uber Clone ") {
+
+            NavigationLink("Uber Clone") {
                 UberHomeView()
+            }
+
+            NavigationLink("Uber Clone 2") {
+                UberCloneHomeView()
+            }
+
+            NavigationLink("Youtube Clone") {
+                YTHomeView()
+            }
+
+            NavigationLink("Youtube Clone 2") {
+                YTCloneHomeView()
             }
         }
         .navigationTitle("Lets Tools")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

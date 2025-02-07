@@ -15,7 +15,6 @@ struct YTCloneHomeView: View {
                 VStack(spacing: 14) {
                     // category
                     CloneCategoryButtonView()
-                        .padding()
 
                     // video section
                     SectionView()
@@ -54,7 +53,7 @@ struct YTCloneHomeView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 20, height: 20)
-                                .foregroundStyle(Color.white)
+                                .foregroundStyle(Color.label)
                         }
 
                         // notification
@@ -63,7 +62,7 @@ struct YTCloneHomeView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 20, height: 20)
-                                .foregroundStyle(Color.white)
+                                .foregroundStyle(Color.label)
                         }
 
                         // search
@@ -72,13 +71,12 @@ struct YTCloneHomeView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 20, height: 20)
-                                .foregroundStyle(Color.white)
+                                .foregroundStyle(Color.label)
                         }
                     }
                 }
             }
         }
-        .preferredColorScheme(.dark)
     }
 }
 
@@ -102,14 +100,16 @@ struct CloneCategoryButtonView: View {
                         Text(categoryDatas[index].title)
                             .font(.subheadline)
                             .fontWeight(.semibold)
-                            .foregroundStyle(selectedIndex == index ? .black : .white)
+                            .foregroundStyle(selectedIndex == index ? Color.systemWhite : Color.systemBlack)
                             .padding(.horizontal, 16)
                             .padding(.vertical, 10)
-                            .background(selectedIndex == index ? .white : Color.grayButtonColor)
+                            .background(selectedIndex == index ? Color.systemBlack : Color.systemGray5)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
                 }
             }
+            .padding(.leading)
+            .padding(.vertical)
         }
     }
 }
@@ -119,7 +119,6 @@ struct SectionView: View {
     var body: some View {
         LazyVStack(spacing: 32) {
             ForEach(videos) { video in
-
                 NavigationLink {
                     VideoDetailView(video: video)
                 } label: {
@@ -152,7 +151,7 @@ struct VideoNormalView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding(.horizontal, 12)
                     .padding(.bottom)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.systemWhite)
             }
             // content info
             HStack(alignment: .top) {
@@ -173,13 +172,13 @@ struct VideoNormalView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .lineLimit(2)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color.label)
                         .multilineTextAlignment(.leading)
 
                     Text("\(video.channelName) - \(video.totalViews) - \(video.publishedAt)")
                         .font(.subheadline)
                         .fontWeight(.regular)
-                        .foregroundStyle(.white.opacity(0.7))
+                        .foregroundStyle(Color.label.opacity(0.7))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineLimit(2)
                 }
@@ -188,7 +187,7 @@ struct VideoNormalView: View {
                 Image(systemName: "ellipsis")
                     .rotationEffect(.degrees(90))
                     .padding(.top, 12)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color.label)
             }
             .padding(.horizontal)
         }
@@ -217,7 +216,7 @@ struct ShortsSectionView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 30)
-                        .foregroundStyle(.red)
+                        .foregroundStyle(Color.systemRed)
                 }
                 Text("Shorts")
                     .font(.title3)
@@ -259,7 +258,7 @@ struct VideoShortView: View {
             // title
             Text(video.title)
                 .font(.subheadline)
-                .foregroundStyle(.white)
+                .foregroundStyle(Color.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
                 .padding(.bottom, 8)
