@@ -9,140 +9,79 @@ import Kingfisher
 import SwiftUI
 
 struct LetsXperiment: View {
-    var videoCategories: [VideoCategoriesResponse] = categories
-    var videoSuggestions: [VideoResponse] = videoData
-    @State private var count: Int = 0
-
+    let imageUrls: [String] = [
+        "https://picsum.photos/200?random==21",
+        "https://picsum.photos/200?random==22",
+        "https://picsum.photos/200?random==23",
+        "https://picsum.photos/200?random==24"
+    ]
+        
+    @State private var currentIndex = 0
+    @State private var offset: CGFloat = 0
+        
     var body: some View {
-        ScrollView {
-            Button {
-                count += 1
-
-            } label: {
-                Text("Count \(count)")
-                    .padding()
-                    .background(.blue)
-                    .foregroundStyle(.white)
-                    .cornerRadius(12)
-            }
-
-            VStack {
-                ForEach(videoSuggestions) { video in
-                    VStack{
-                        ZStack(alignment: .bottomTrailing) {
-                           
-//                            Image(systemName: "magnifyingglass")
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(width: UIScreen.main.bounds.width)
-////                                .frame(height: 200)
-//                                .clipShape(Rectangle())
-
-                            
-                            KFImage(URL(string: video.thumbnailUrl))
-                                  .resizable()
-                                  .scaledToFit()
-                                  .frame(width: UIScreen.main.bounds.width)  // Fixed width
-                                  .clipShape(Rectangle())
-                              
-                              Spacer().frame(height: UIScreen.main.bounds.width / 1.8)
-                            
-                            
-//                            GeometryReader { geometry in
-//                                KFImage(URL(string: video.thumbnailUrl))
-//                                    .resizable()
-//                                    .scaledToFill()
-//                                    .frame(width: geometry.size.width)  // Use GeometryReader width
-//                                    .frame(height: geometry.size.width / 1.8)  // Dynamically set height based on width
-//                                    .clipShape(Rectangle())
-//                            }
-//                            .frame(height: UIScreen.main.bounds.width / 1.8)
-//                            
-//                            KFImage(URL(string: video.thumbnailUrl))
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(width: UIScreen.main.bounds.width)
-//                                .aspectRatio(16/9, contentMode: .fill)
-//                                .clipShape(Rectangle())
-
-                            Text("10:00")
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                                .frame(width: 50, height: 25)
-                                .background(Color.black.opacity(0.5))
-                                .cornerRadius(8)
-                                .padding(.bottom, 10)
-                                .padding(.trailing, 8)
-                        }
-                    }
-
-                    HStack(alignment: .top) {
-                        KFImage(URL(string: video.profileImageUrl))
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 35, height: 35)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle().stroke(
-                                    Color.white,
-                                    lineWidth: 1
-                                )
-                            )
-                            .shadow(radius: 5)
-
-                        VStack(alignment: .leading, spacing: 6) {
-                            HStack {
-                                Text(video.title)
-                                    .font(.subheadline)
-                                    .fontWeight(.semibold)
-
-                                Spacer()
-
-                                Text("⋮")
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                            }
-
-                            HStack {
-                                Text("\(video.name) -")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-
-                                Text("\(video.views) -")
-                                    .font(.caption)
-                                    .fontWeight(.light)
-
-                                Text("\(video.uploadDuration)")
-                                    .font(.caption)
-                                    .fontWeight(.light)
+        VStack {
+            ZStack {
+                // Image Carousel
+                GeometryReader { geometry in
+                    HStack(spacing: 0) {
+                        ForEach(0 ..< imageUrls.count, id: \.self) { index in
+                            AsyncImage(url: URL(string: imageUrls[index])) { image in
+                                image.resizable()
+                                    .scaledToFill()
+                                    .frame(width: geometry.size.width, height: 200)
+                                    .cornerRadius(10)
+                            } placeholder: {
+                                Color.gray
                             }
                         }
                     }
-                    .padding(.horizontal)
-                    .padding(.bottom)
+                    .offset(x: self.offset)
+                    .gesture(
+                        DragGesture()
+                            .onChanged { value in
+                                self.offset = value.translation.width - CGFloat(self.currentIndex) * geometry.size.width
+                            }
+                            .onEnded { value in
+                                if value.translation.width < -50 { // Swipe left
+                                    self.moveToNextImage()
+                                } else if value.translation.width > 50 { // Swipe right
+                                    self.moveToPreviousImage()
+                                } else {
+                                    self.offset = -CGFloat(self.currentIndex) * geometry.size.width
+                                }
+                            }
+                    )
+                    .animation(.easeInOut(duration: 0.3), value: offset)
                 }
+                .frame(height: 200)
             }
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    ForEach(videoCategories) { category in
-                        Button {} label: {
-                            Text(category.name)
-                                .font(.subheadline)
-                                .foregroundStyle(.white)
-                                .padding(8)
-                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.gray.opacity(0.4)))
-                        }
-                    }
-                    Spacer()
-                }
-                .padding(.horizontal, 10)
-
-                //            .padding(.bottom)
-            }
+                
+            Spacer()
         }
     }
+        
+    /// Move to the next image
+    func moveToNextImage() {
+        if currentIndex < imageUrls.count - 1 {
+            currentIndex += 1
+        } else {
+            currentIndex = 0 // Loop back to the first image
+        }
+        offset = -CGFloat(currentIndex) * 300 // Adjust the offset to the new image
+    }
+        
+    /// Move to the previous image
+    func moveToPreviousImage() {
+        if currentIndex > 0 {
+            currentIndex -= 1
+        } else {
+            currentIndex = imageUrls.count - 1 // Loop back to the last image
+        }
+        offset = -CGFloat(currentIndex) * 300 // Adjust the offset to the new image
+    }
 }
+
 
 #Preview {
     LetsXperiment()

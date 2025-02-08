@@ -66,9 +66,7 @@ struct UberCloneHomeView: View {
                     HStack(spacing: 0) {
                         ForEach(tabs.indices, id: \.self) { index in
                             Button {
-                                withAnimation {
-                                    selectedIndex = index
-                                }
+                                
                             } label: {
                                 VStack(spacing: 6) {
                                     // icon and text
