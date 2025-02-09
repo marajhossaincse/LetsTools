@@ -19,7 +19,9 @@ struct AirbnbHomeScreen: View {
 
                     SiteView()
                 }
+                .background(.red)
             }
+            .background(.yellow)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack(spacing: 18) {
