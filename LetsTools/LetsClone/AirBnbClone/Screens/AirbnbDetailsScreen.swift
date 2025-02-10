@@ -29,6 +29,10 @@ struct AirbnbDetailsScreen: View {
             VStack {
                 SiteGalleryView(site: site)
                 SiteDetailsView(site: site)
+                HostDetailsView()
+
+                Divider()
+                    .padding()
             }
         }
         .toolbar {
@@ -105,7 +109,6 @@ struct SiteGalleryView: View {
                         .foregroundStyle(Color.systemBlack)
                         .padding(10)
                         .background(Circle().fill(Color.systemWhite))
-                        .padding(.horizontal)
 
                     if site.isFavorite {
                         Image(systemName: "heart.fill")
@@ -115,7 +118,6 @@ struct SiteGalleryView: View {
                             .foregroundColor(Color.systemRed)
                             .padding(10)
                             .background(Circle().fill(Color.systemWhite))
-                            .padding(.horizontal)
                     } else {
                         Image(systemName: "heart")
                             .resizable()
@@ -124,7 +126,6 @@ struct SiteGalleryView: View {
                             .foregroundColor(Color.systemBlack)
                             .padding(10)
                             .background(Circle().fill(Color.systemWhite))
-                            .padding(.horizontal)
                     }
                 }
                 .padding(.horizontal)
@@ -196,6 +197,31 @@ struct SiteDetailsView: View {
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(Color.gray, lineWidth: 1)
             }
+            .padding(.vertical)
+        }
+        .padding(.horizontal)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+struct HostDetailsView: View {
+    var body: some View {
+        HStack {
+            KFImage(URL(string: "https://picsum.photos/200"))
+                .resizable()
+                .scaledToFill()
+                .frame(width: 55, height: 55)
+                .clipShape(Circle())
+
+            VStack(alignment: .leading) {
+                Text("Hosted by John Doe")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+
+                Text("Superhost - 5 years on AirBnb")
+                    .font(.footnote)
+            }
+            .padding(.leading, 12)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
