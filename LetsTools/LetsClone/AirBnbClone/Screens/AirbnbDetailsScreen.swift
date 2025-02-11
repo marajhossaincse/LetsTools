@@ -27,16 +27,18 @@ struct AirbnbDetailsScreen: View {
     var body: some View {
         ScrollView {
             VStack {
-                SiteGalleryView(site: site)
-                SiteDetailsView(site: site)
-                HostDetailsView()
-
-                Divider()
-                    .padding()
-
-                SiteFacilitiesView()
+//                SiteGalleryView(site: site)
+//                SiteDetailsView(site: site)
+//                HostDetailsView()
+//
+//                Divider()
+//                    .padding()
+//
+//                SiteFacilitiesView()
 
                 BnbBedroomView()
+
+                BnbCommoditiesView()
             }
         }
         .toolbar {
@@ -293,8 +295,6 @@ struct SiteFacilitiesView: View {
 }
 
 struct BnbBedroomView: View {
-    let width = UIScreen.main.bounds.width / 2 - 16
-
     var body: some View {
         VStack(alignment: .leading) {
             Text("Where you'll sleep")
@@ -306,7 +306,7 @@ struct BnbBedroomView: View {
                     KFImage(URL(string: "https://picsum.photos/200"))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: width, height: 120)
+                        .frame(width: 180, height: 120)
                         .clipped()
                         .cornerRadius(12)
 
@@ -321,7 +321,7 @@ struct BnbBedroomView: View {
                     KFImage(URL(string: "https://picsum.photos/200"))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: width, height: 120)
+                        .frame(width: 180, height: 120)
                         .clipped()
                         .cornerRadius(12)
 
@@ -332,6 +332,69 @@ struct BnbBedroomView: View {
                 }
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, 8)
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+struct BnbCommoditiesView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("What this place offers")
+                .font(.title3)
+                .fontWeight(.bold)
+
+            HStack(spacing: 20) {
+                Image(systemName: "lock")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 16, height: 16)
+                    .fontWeight(.semibold)
+
+                Text("Lock on bedroom door.")
+                    .font(.headline)
+                    .fontWeight(.regular)
+            }
+
+            HStack(spacing: 20) {
+                Image(systemName: "wifi")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 16, height: 16)
+                    .fontWeight(.semibold)
+
+                Text("Wi-Fi")
+                    .font(.headline)
+                    .fontWeight(.regular)
+            }
+
+            HStack(spacing: 20) {
+                Image(systemName: "car")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 16, height: 16)
+                    .fontWeight(.semibold)
+
+                Text("Free parking on premises.")
+                    .font(.headline)
+                    .fontWeight(.regular)
+            }
+
+            HStack(spacing: 20) {
+                Image(systemName: "camera")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 16, height: 16)
+                    .fontWeight(.semibold)
+
+                Text("Exterior security cameras on property.")
+                    .font(.headline)
+                    .fontWeight(.regular)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal)
+        .padding(.vertical, 8)
     }
 }
