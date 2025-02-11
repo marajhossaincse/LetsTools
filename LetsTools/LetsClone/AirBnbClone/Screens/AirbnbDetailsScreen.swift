@@ -35,6 +35,8 @@ struct AirbnbDetailsScreen: View {
                     .padding()
 
                 SiteFacilitiesView()
+
+                BnbBedroomView()
             }
         }
         .toolbar {
@@ -290,3 +292,46 @@ struct SiteFacilitiesView: View {
     }
 }
 
+struct BnbBedroomView: View {
+    let width = UIScreen.main.bounds.width / 2 - 16
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Where you'll sleep")
+                .font(.title3)
+                .fontWeight(.bold)
+
+            HStack {
+                VStack(alignment: .leading) {
+                    KFImage(URL(string: "https://picsum.photos/200"))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: 120)
+                        .clipped()
+                        .cornerRadius(12)
+
+                    Text("Bedroom 1")
+                        .font(.headline)
+
+                    Text("1 king bed")
+                        .font(.subheadline)
+                }
+
+                VStack(alignment: .leading) {
+                    KFImage(URL(string: "https://picsum.photos/200"))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: 120)
+                        .clipped()
+                        .cornerRadius(12)
+
+                    Text("Bedroom 2")
+                        .font(.headline)
+                    Text("1 queen bed")
+                        .font(.subheadline)
+                }
+            }
+        }
+        .padding()
+    }
+}
