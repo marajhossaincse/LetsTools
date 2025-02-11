@@ -33,6 +33,8 @@ struct AirbnbDetailsScreen: View {
 
                 Divider()
                     .padding()
+
+                SiteFacilitiesView()
             }
         }
         .toolbar {
@@ -227,3 +229,64 @@ struct HostDetailsView: View {
         .padding(.horizontal)
     }
 }
+
+struct SiteFacilitiesView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Image(systemName: "table.furniture")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .frame(width: 24, height: 24)
+
+                    Text("Dedicated workspace")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                }
+
+                Text("A common area with wifi that's well-suited for working.")
+                    .font(.footnote)
+                    .padding(.leading, 35)
+            }
+
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Image(systemName: "lamp.table")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .frame(width: 24, height: 24)
+
+                    Text("Self check-in")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                }
+
+                Text("Check yourself in with the smart lock.")
+                    .font(.footnote)
+                    .padding(.leading, 35)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Image(systemName: "door.left.hand.closed")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .frame(width: 24, height: 24)
+
+                    Text("Ozlem is a Superhost")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                }
+
+                Text("Superhosts are experienced, highly rated Hosts.")
+                    .font(.footnote)
+                    .padding(.leading, 35)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(.horizontal)
+    }
+}
+
