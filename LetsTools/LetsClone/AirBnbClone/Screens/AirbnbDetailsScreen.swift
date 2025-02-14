@@ -27,18 +27,37 @@ struct AirbnbDetailsScreen: View {
     var body: some View {
         ScrollView {
             VStack {
-//                SiteGalleryView(site: site)
-//                SiteDetailsView(site: site)
-//                HostDetailsView()
-//
-//                Divider()
-//                    .padding()
-//
-//                SiteFacilitiesView()
+                SiteGalleryView(site: site)
+
+                SiteDetailsView(site: site)
+
+                HostDetailsView()
+
+                Divider()
+                    .padding()
+
+                SiteFacilitiesView()
 
                 BnbBedroomView()
 
                 BnbCommoditiesView()
+
+                BnbReviewsView()
+
+                Button {} label: {
+                    Text("Show all 101 reviews")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .foregroundStyle(Color.systemBlack)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .stroke()
+                                .fill(Color.systemGray)
+                        )
+                        .padding(.horizontal)
+                }
             }
         }
         .toolbar {
@@ -65,6 +84,7 @@ struct AirbnbDetailsScreen: View {
                 .frame(width: UIScreen.main.bounds.width)
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -86,6 +106,8 @@ struct AirbnbDetailsScreen: View {
 }
 
 struct SiteGalleryView: View {
+    @Environment(\.dismiss) var dismiss
+
     var site: BnbSitesResponse
 
     var body: some View {
@@ -98,13 +120,17 @@ struct SiteGalleryView: View {
                     .frame(height: 200)
 
                 HStack {
-                    Image(systemName: "chevron.left")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 8, height: 8)
-                        .foregroundStyle(Color.systemBlack)
-                        .padding(10)
-                        .background(Circle().fill(Color.systemWhite))
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 8, height: 8)
+                            .foregroundStyle(Color.systemBlack)
+                            .padding(10)
+                            .background(Circle().fill(Color.systemWhite))
+                    }
 
                     Spacer()
 
@@ -396,5 +422,63 @@ struct BnbCommoditiesView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
         .padding(.vertical, 8)
+    }
+}
+
+struct BnbReviewsView: View {
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0 ..< 5, id: \.self) { _ in
+                    CommentComponentView()
+                }
+            }
+        }
+    }
+}
+
+struct CommentComponentView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 0) {
+                ForEach(0 ..< 5, id: \.self) { _ in
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 12, height: 12)
+                        .padding(.horizontal, 1)
+                }
+            }
+            Text("2 weeks ago")
+
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget lacus sit amet arcu vulputate sollicitudin. Duis luctus leo ultrices, fermentum lorem nec, cursus libero. Etiam maximus blandit est, sit amet sodales turpis dignissim a. Proin luctus sapien felis, non euismod turpis semper vitae. Suspendisse volutpat feugiat tincidunt. Phasellus non.")
+
+            HStack(spacing: 20) {
+                KFImage(URL(string: "https://picsum.photos/200"))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+
+                VStack(alignment: .leading) {
+                    Text("John")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+
+                    Text("5 years on Airbnb")
+                        .font(.subheadline)
+                }
+            }
+            .padding(.top)
+        }
+        .padding()
+        .frame(width: UIScreen.main.bounds.width - 30)
+        .overlay {
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(lineWidth: 1)
+                .fill(Color.systemGray4)
+        }
+        .frame(height: 250)
+        .padding(.horizontal)
     }
 }

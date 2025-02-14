@@ -15,25 +15,23 @@ struct LetsXperiment: View {
         "https://picsum.photos/200?random==23",
         "https://picsum.photos/200?random==24"
     ]
-        
+
     @State private var currentIndex = 0
     @State private var offset: CGFloat = 0
-        
+
     var body: some View {
         VStack {
             ZStack {
                 // Image Carousel
                 GeometryReader { geometry in
                     HStack(spacing: 0) {
-                        ForEach(0 ..< imageUrls.count, id: \.self) { index in
-                            AsyncImage(url: URL(string: imageUrls[index])) { image in
-                                image.resizable()
-                                    .scaledToFill()
-                                    .frame(width: geometry.size.width, height: 200)
-                                    .cornerRadius(10)
-                            } placeholder: {
-                                Color.gray
-                            }
+                        ForEach(0 ..< imageUrls.count, id: \.self) { _ in
+                            Image("")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(maxWidth: .infinity)
+                                .background(.green)
+                                .cornerRadius(14)
                         }
                     }
                     .offset(x: self.offset)
@@ -56,11 +54,11 @@ struct LetsXperiment: View {
                 }
                 .frame(height: 200)
             }
-                
+
             Spacer()
         }
     }
-        
+
     /// Move to the next image
     func moveToNextImage() {
         if currentIndex < imageUrls.count - 1 {
@@ -70,7 +68,7 @@ struct LetsXperiment: View {
         }
         offset = -CGFloat(currentIndex) * 300 // Adjust the offset to the new image
     }
-        
+
     /// Move to the previous image
     func moveToPreviousImage() {
         if currentIndex > 0 {
@@ -81,7 +79,6 @@ struct LetsXperiment: View {
         offset = -CGFloat(currentIndex) * 300 // Adjust the offset to the new image
     }
 }
-
 
 #Preview {
     LetsXperiment()

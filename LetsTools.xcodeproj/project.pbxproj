@@ -36,6 +36,7 @@
 		D92983D12D50B4110053E4DA /* YTCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92983D02D50B4110053E4DA /* YTCloneHomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93452B92D46336F008769C3 /* UberCloneHomeView.swift */; };
+		D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961696B2D5DE45E004DF017 /* ImageCarousel.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
 		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
 		D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */; };
@@ -113,6 +114,7 @@
 		D92983D02D50B4110053E4DA /* YTCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTCloneHomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D93452B92D46336F008769C3 /* UberCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneHomeView.swift; sourceTree = "<group>"; };
+		D961696B2D5DE45E004DF017 /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
 		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
 		D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHomeView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				CE31AA2F2BC1F8A800B9D4EE /* LetsToolsApp.swift */,
 				CE31AA3D2BC1F8E400B9D4EE /* HomeScreen.swift */,
+				D961696A2D5DE44C004DF017 /* LetsSlide */,
 				D9E39D172D44CFF500C106DD /* LetsTab */,
 				CE31AA3F2BC20C6A00B9D4EE /* LetsRingProgressBar */,
 				CEB73EAD2BF918840095F300 /* LetsMask */,
@@ -414,6 +417,14 @@
 				D9F4E4082D4C962700C17ED8 /* Screens */,
 			);
 			path = YoutubeClone;
+			sourceTree = "<group>";
+		};
+		D961696A2D5DE44C004DF017 /* LetsSlide */ = {
+			isa = PBXGroup;
+			children = (
+				D961696B2D5DE45E004DF017 /* ImageCarousel.swift */,
+			);
+			path = LetsSlide;
 			sourceTree = "<group>";
 		};
 		D970A5B22D46085000CF76B8 /* UberClone2.0 */ = {
@@ -778,6 +789,7 @@
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9156D1A2D568B9800A59ED5 /* BnbSitesData.swift in Sources */,
 				D9B258402D193EAC00A23D57 /* StoryAndReelTab.swift in Sources */,
+				D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */,
 				D9084E222D3831D00036E871 /* UserResponse.swift in Sources */,
 				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
 				D9084E242D3832220036E871 /* StoryData.swift in Sources */,
