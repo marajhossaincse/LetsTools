@@ -20,6 +20,7 @@ struct AirbnbHomeScreen: View {
                     SiteView()
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack(spacing: 18) {
@@ -146,80 +147,82 @@ struct SiteView: View {
     var sites: [BnbSitesResponse] = sitesData
 
     var body: some View {
-        NavigationLink {
-            AirbnbDetailsScreen()
+        ForEach(sites, id: \.name) { site in
+            NavigationLink {
+                AirbnbDetailsScreen(site: site)
 
-        } label: {
-            VStack {
-                // image
-                ForEach(sites, id: \.name) { site in
-                    ZStack(alignment: .top) {
-                        VStack {
-                            TabView {
-                                ForEach(site.images, id: \.self) { image in
-                                    KFImage(URL(string: image))
+            } label: {
+                VStack {
+                    // image
+                    ForEach(sites, id: \.name) { site in
+                        ZStack(alignment: .top) {
+                            VStack {
+                                TabView {
+                                    ForEach(site.images, id: \.self) { image in
+                                        KFImage(URL(string: image))
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(maxWidth: .infinity)
+                                            .frame(height: 250)
+                                            .cornerRadius(10)
+                                    }
+                                }
+                                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+                                .frame(height: 250)
+                            }
+
+                            HStack(alignment: .center) {
+                                Text("Guest favorite")
+                                    .font(.subheadline)
+                                    .fontWeight(.semibold)
+                                    .padding(.horizontal)
+                                    .padding(.vertical, 10)
+                                    .foregroundStyle(Color.systemBlack)
+                                    .background(Capsule().fill(Color.systemWhite))
+
+                                Spacer()
+
+                                if site.isFavorite {
+                                    Image(systemName: "heart.fill")
                                         .resizable()
                                         .scaledToFill()
-                                        .frame(maxWidth: .infinity)
-                                        .frame(height: 250)
-                                        .cornerRadius(10)
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(Color.systemRed)
+                                } else {
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(Color.systemBlack)
                                 }
                             }
-                            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                            .frame(height: 250)
+                            .padding(.top)
+                            .padding(.horizontal)
                         }
 
-                        HStack(alignment: .center) {
-                            Text("Guest favorite")
+                        VStack(alignment: .leading, spacing: 6) {
+                            HStack(spacing: 8) {
+                                Text(site.name)
+                                    .font(.headline)
+
+                                Spacer()
+
+                                Image(systemName: "star.fill")
+                                Text(site.rating)
+                            }
+                            Text(site.distance)
+                                .font(.subheadline)
+
+                            Text(site.availabilityDate)
+                                .font(.subheadline)
+
+                            Text("$\(site.price) night")
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
-                                .padding(.horizontal)
-                                .padding(.vertical, 10)
-                                .foregroundStyle(Color.systemBlack)
-                                .background(Capsule().fill(Color.systemWhite))
-
-                            Spacer()
-
-                            if site.isFavorite {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(Color.systemRed)
-                            } else {
-                                Image(systemName: "heart")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(Color.systemBlack)
-                            }
                         }
-                        .padding(.top)
-                        .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.vertical, 8)
                     }
-
-                    VStack(alignment: .leading, spacing: 6) {
-                        HStack(spacing: 8) {
-                            Text(site.name)
-                                .font(.headline)
-
-                            Spacer()
-
-                            Image(systemName: "star.fill")
-                            Text(site.rating)
-                        }
-                        Text(site.distance)
-                            .font(.subheadline)
-
-                        Text(site.availabilityDate)
-                            .font(.subheadline)
-
-                        Text("$\(site.price) night")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical, 8)
                 }
             }
             .foregroundStyle(Color.label)

@@ -41,7 +41,6 @@
 		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
 		D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */; };
 		D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */; };
-		D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */; };
 		D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */; };
 		D971E45F2D3FC0B3008F93D5 /* RideHistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */; };
 		D976FE9E2D4F770700BB6F92 /* VideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976FE9D2D4F770700BB6F92 /* VideoDetailsView.swift */; };
@@ -73,6 +72,17 @@
 		D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */; };
 		D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B4797A2D1A7FE600E84423 /* StatusCard.swift */; };
 		D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */; };
+		D9BD67732D629969001EAFFA /* BookingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67722D629969001EAFFA /* BookingData.swift */; };
+		D9BD67752D62997C001EAFFA /* BookingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67742D62997C001EAFFA /* BookingResponse.swift */; };
+		D9BD67782D631235001EAFFA /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67772D631235001EAFFA /* DetailResponse.swift */; };
+		D9BD677A2D6312EE001EAFFA /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67792D6312EE001EAFFA /* DetailData.swift */; };
+		D9BD677C2D6312FB001EAFFA /* HostListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD677B2D6312FB001EAFFA /* HostListResponse.swift */; };
+		D9BD677E2D631354001EAFFA /* PlaceOfferResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD677D2D631354001EAFFA /* PlaceOfferResponse.swift */; };
+		D9BD67802D63139A001EAFFA /* ReviewListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD677F2D63139A001EAFFA /* ReviewListResponse.swift */; };
+		D9BD67822D6313ED001EAFFA /* SleepListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67812D6313ED001EAFFA /* SleepListResponse.swift */; };
+		D9BD67852D631561001EAFFA /* AirBnbTabResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67842D631561001EAFFA /* AirBnbTabResponse.swift */; };
+		D9BD67872D631589001EAFFA /* AirBnBTabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD67862D631589001EAFFA /* AirBnBTabData.swift */; };
+		D9BD678B2D631A31001EAFFA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD678A2D631A31001EAFFA /* HomeView.swift */; };
 		D9C279122D55265000CC256C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C279112D55265000CC256C /* Assets.xcassets */; };
 		D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */; };
 		D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DC8E222D43D27500216077 /* RecommendedRestaurantResponse.swift */; };
@@ -118,7 +128,6 @@
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
 		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
 		D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHomeView.swift; sourceTree = "<group>"; };
-		D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsXperiment.swift; sourceTree = "<group>"; };
 		D971E45C2D3FBFDB008F93D5 /* RideHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryResponse.swift; sourceTree = "<group>"; };
 		D971E45E2D3FC0B3008F93D5 /* RideHistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryData.swift; sourceTree = "<group>"; };
 		D976FE9D2D4F770700BB6F92 /* VideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsView.swift; sourceTree = "<group>"; };
@@ -150,6 +159,17 @@
 		D9B479782D1A7F8600E84423 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		D9B4797A2D1A7FE600E84423 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
 		D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHomeScreen.swift; sourceTree = "<group>"; };
+		D9BD67722D629969001EAFFA /* BookingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingData.swift; sourceTree = "<group>"; };
+		D9BD67742D62997C001EAFFA /* BookingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingResponse.swift; sourceTree = "<group>"; };
+		D9BD67772D631235001EAFFA /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
+		D9BD67792D6312EE001EAFFA /* DetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
+		D9BD677B2D6312FB001EAFFA /* HostListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListResponse.swift; sourceTree = "<group>"; };
+		D9BD677D2D631354001EAFFA /* PlaceOfferResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOfferResponse.swift; sourceTree = "<group>"; };
+		D9BD677F2D63139A001EAFFA /* ReviewListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListResponse.swift; sourceTree = "<group>"; };
+		D9BD67812D6313ED001EAFFA /* SleepListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepListResponse.swift; sourceTree = "<group>"; };
+		D9BD67842D631561001EAFFA /* AirBnbTabResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBnbTabResponse.swift; sourceTree = "<group>"; };
+		D9BD67862D631589001EAFFA /* AirBnBTabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBnBTabData.swift; sourceTree = "<group>"; };
+		D9BD678A2D631A31001EAFFA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D9C279112D55265000CC256C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D0E7FD2D0088D5001373E0 /* StoryCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCart.swift; sourceTree = "<group>"; };
 		D9DC8E222D43D27500216077 /* RecommendedRestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedRestaurantResponse.swift; sourceTree = "<group>"; };
@@ -219,7 +239,6 @@
 				CE2F75242C42EAF200076DC3 /* LetsContainerMenu */,
 				D9B73E2F2CF4C86000A63E04 /* LetsClone */,
 				CE31AA352BC1F8AA00B9D4EE /* Preview Content */,
-				D971E4592D3F7CF8008F93D5 /* LetsXperiment.swift */,
 				D9C279112D55265000CC256C /* Assets.xcassets */,
 			);
 			path = LetsTools;
@@ -617,6 +636,7 @@
 				D94ABBEC2D4C958700717D60 /* YoutubeClone */,
 				D92983C32D50A6D40053E4DA /* YoutubeClone2.0 */,
 				D92793A22D56488000E0948D /* AirBnbClone */,
+				D9BD676E2D6298C4001EAFFA /* AirBnbClone2.0 */,
 			);
 			path = LetsClone;
 			sourceTree = "<group>";
@@ -630,6 +650,64 @@
 				D9B73E312CF4CA7D00A63E04 /* FBHomeScreen.swift */,
 			);
 			path = FacebookClone;
+			sourceTree = "<group>";
+		};
+		D9BD676E2D6298C4001EAFFA /* AirBnbClone2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD676F2D6298E6001EAFFA /* Models */,
+				D9BD67702D6298F0001EAFFA /* Screens */,
+			);
+			path = AirBnbClone2.0;
+			sourceTree = "<group>";
+		};
+		D9BD676F2D6298E6001EAFFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD67712D629952001EAFFA /* BookingModel */,
+				D9BD67762D63121E001EAFFA /* DetailModel */,
+				D9BD67832D631548001EAFFA /* TabModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9BD67702D6298F0001EAFFA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD678A2D631A31001EAFFA /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D9BD67712D629952001EAFFA /* BookingModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD67722D629969001EAFFA /* BookingData.swift */,
+				D9BD67742D62997C001EAFFA /* BookingResponse.swift */,
+			);
+			path = BookingModel;
+			sourceTree = "<group>";
+		};
+		D9BD67762D63121E001EAFFA /* DetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD67792D6312EE001EAFFA /* DetailData.swift */,
+				D9BD67772D631235001EAFFA /* DetailResponse.swift */,
+				D9BD677B2D6312FB001EAFFA /* HostListResponse.swift */,
+				D9BD677D2D631354001EAFFA /* PlaceOfferResponse.swift */,
+				D9BD677F2D63139A001EAFFA /* ReviewListResponse.swift */,
+				D9BD67812D6313ED001EAFFA /* SleepListResponse.swift */,
+			);
+			path = DetailModel;
+			sourceTree = "<group>";
+		};
+		D9BD67832D631548001EAFFA /* TabModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD67842D631561001EAFFA /* AirBnbTabResponse.swift */,
+				D9BD67862D631589001EAFFA /* AirBnBTabData.swift */,
+			);
+			path = TabModel;
 			sourceTree = "<group>";
 		};
 		D9DC8E212D43D24500216077 /* RecommendedRestarants */ = {
@@ -754,15 +832,21 @@
 				D98582762D460B9000DDBA94 /* RidesSuggestionResponse.swift in Sources */,
 				D9E39D192D44D03C00C106DD /* TabWithLineIndicator.swift in Sources */,
 				D983A2EF2D1699FB00A7C3CE /* NewsFeedItem.swift in Sources */,
+				D9BD67852D631561001EAFFA /* AirBnbTabResponse.swift in Sources */,
+				D9BD678B2D631A31001EAFFA /* HomeView.swift in Sources */,
 				D98582742D460B7F00DDBA94 /* RidesHistoryData.swift in Sources */,
 				D9084E2E2D38417F0036E871 /* FBCloneHomeView.swift in Sources */,
 				D98582722D460B7700DDBA94 /* RidesHistoryResponse.swift in Sources */,
+				D9BD677E2D631354001EAFFA /* PlaceOfferResponse.swift in Sources */,
 				D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */,
 				D92983CF2D50A86E0053E4DA /* VideoSectionData.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
 				D9B258422D193EDC00A23D57 /* ReelsCart.swift in Sources */,
+				D9BD67752D62997C001EAFFA /* BookingResponse.swift in Sources */,
 				CEB73EAF2BF918A60095F300 /* MaskScreen.swift in Sources */,
+				D9BD677A2D6312EE001EAFFA /* DetailData.swift in Sources */,
 				D9084E1C2D38253F0036E871 /* FeedResponse.swift in Sources */,
+				D9BD67802D63139A001EAFFA /* ReviewListResponse.swift in Sources */,
 				D99FA4132D4D174C003FD43A /* ShortsResponse.swift in Sources */,
 				D92983D12D50B4110053E4DA /* YTCloneHomeView.swift in Sources */,
 				D9F4E40C2D4C9E2800C17ED8 /* VideoCategoriesResponse.swift in Sources */,
@@ -792,11 +876,14 @@
 				D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */,
 				D9084E222D3831D00036E871 /* UserResponse.swift in Sources */,
 				D9B4797B2D1A7FE600E84423 /* StatusCard.swift in Sources */,
+				D9BD67872D631589001EAFFA /* AirBnBTabData.swift in Sources */,
 				D9084E242D3832220036E871 /* StoryData.swift in Sources */,
 				CE9D07832C1DF5D8004C1813 /* CutCardScreen.swift in Sources */,
 				D9DC8E232D43D27500216077 /* RecommendedRestaurantResponse.swift in Sources */,
+				D9BD67822D6313ED001EAFFA /* SleepListResponse.swift in Sources */,
 				D9B73E322CF4CA7D00A63E04 /* FBHomeScreen.swift in Sources */,
 				D913AADB2D53325400820A45 /* VideoDetailView.swift in Sources */,
+				D9BD67732D629969001EAFFA /* BookingData.swift in Sources */,
 				D9B479792D1A7F8600E84423 /* HeaderTitleView.swift in Sources */,
 				D98582662D46099900DDBA94 /* EatsRestaurantResponse.swift in Sources */,
 				D9156D182D568B8700A59ED5 /* BnbSitesResponse.swift in Sources */,
@@ -805,8 +892,9 @@
 				D92983C82D50A7130053E4DA /* CategoryResponse.swift in Sources */,
 				D9084E1A2D3825360036E871 /* FeedData.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
+				D9BD677C2D6312FB001EAFFA /* HostListResponse.swift in Sources */,
+				D9BD67782D631235001EAFFA /* DetailResponse.swift in Sources */,
 				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
-				D971E45A2D3F7CF8008F93D5 /* LetsXperiment.swift in Sources */,
 				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
 				D985826B2D460A9700DDBA94 /* RidesAdsResponse.swift in Sources */,
 				D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */,

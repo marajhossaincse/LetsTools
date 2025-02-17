@@ -9,20 +9,22 @@ import Kingfisher
 import SwiftUI
 
 struct AirbnbDetailsScreen: View {
-    var site: BnbSitesResponse = .init(
-        name: "Luxury Beachfront Villa.",
-        images: [
-            "https://picsum.photos/200?random==1",
-            "https://picsum.photos/200?random==2",
-            "https://picsum.photos/200?random==3",
-            "https://picsum.photos/200?random==4"
-        ],
-        distance: "56 miles away",
-        rating: "4.99",
-        availabilityDate: "Feb 4-9",
-        price: "290",
-        isFavorite: true
-    )
+    let site: BnbSitesResponse
+    
+//    var site: BnbSitesResponse = .init(
+//        name: "Luxury Beachfront Villa.",
+//        images: [
+//            "https://picsum.photos/200?random==1",
+//            "https://picsum.photos/200?random==2",
+//            "https://picsum.photos/200?random==3",
+//            "https://picsum.photos/200?random==4"
+//        ],
+//        distance: "56 miles away",
+//        rating: "4.99",
+//        availabilityDate: "Feb 4-9",
+//        price: "290",
+//        isFavorite: true
+//    )
 
     var body: some View {
         ScrollView {
@@ -89,20 +91,7 @@ struct AirbnbDetailsScreen: View {
 }
 
 #Preview {
-    AirbnbDetailsScreen(site: BnbSitesResponse(
-        name: "Luxury Beachfront Villa.",
-        images: [
-            "https://picsum.photos/200?random==1",
-            "https://picsum.photos/200?random==2",
-            "https://picsum.photos/200?random==3",
-            "https://picsum.photos/200?random==4"
-        ],
-        distance: "56 miles away",
-        rating: "4.99",
-        availabilityDate: "Feb 4-9",
-        price: "290",
-        isFavorite: true
-    ))
+    AirbnbDetailsScreen(site: sitesData[0])
 }
 
 struct SiteGalleryView: View {
