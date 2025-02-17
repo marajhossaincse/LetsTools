@@ -9,6 +9,6 @@ import Foundation
 
 struct AirBnbTabResponse: Identifiable{
     var id = UUID()
-    var name: String
+    var title: String
     var imageUrl: String
 }

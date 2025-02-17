@@ -7,8 +7,7 @@
 
 import Foundation
 
-let exampleResponses = [
-   
+let bookingsData = [
     BookingResponse(
         placeImages: [
             "https://picsum.photos/500/300?random=4",
