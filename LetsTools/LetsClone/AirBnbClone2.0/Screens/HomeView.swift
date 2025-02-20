@@ -12,7 +12,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             NavigationStack {
-                ZStack {
+                ZStack(alignment: .bottom) {
                     ScrollView {
                         VStack(spacing: 24) {
                             // search
@@ -25,6 +25,18 @@ struct HomeView: View {
                             ListBookingView()
                         }
                         .padding(.vertical)
+                    }
+                    Button {} label: {
+                        HStack {
+                            Text("Map")
+                                .font(.headline)
+
+                            Image(systemName: "map.fill")
+                        }
+                        .foregroundStyle(Color.systemWhite)
+                        .frame(width: 120, height: 55)
+                        .background(Color.systemBlack.opacity(0.9))
+                        .clipShape(Capsule())
                     }
                 }
                 .navigationBarTitleDisplayMode(.inline)
@@ -142,7 +154,9 @@ struct ListBookingView: View {
     var body: some View {
         LazyVStack(spacing: 24) {
             ForEach(bookingDatas) { booking in
-                BookingRowView(booking: booking)
+                NavigationLink(destination: DetailView(booking: booking)) {
+                    BookingRowView(booking: booking)
+                }
             }
         }
         .padding(.horizontal)
@@ -194,7 +208,7 @@ struct BookingRowView: View {
                             .padding(.horizontal)
                             .padding(.vertical, 6)
                             .background(.white)
-                            .foregroundStyle(Color.systemBlack)
+                            .foregroundStyle(Color.black)
                             .clipShape(Capsule())
                     }
                     Spacer()

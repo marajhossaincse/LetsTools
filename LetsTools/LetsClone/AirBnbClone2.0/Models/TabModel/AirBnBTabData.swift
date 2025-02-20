@@ -10,22 +10,22 @@ import Foundation
 let airBnbTabData = [
     AirBnbTabResponse(
         title: "Tiny homes",
-        imageUrl: "https://picsum.photos/500/300?random=1"
+        imageUrl: "https://picsum.photos/200/300?grayscale==1"
     ),
     AirBnbTabResponse(
         title: "Icons",
-        imageUrl: "https://picsum.photos/500/300?random=2"
+        imageUrl: "https://picsum.photos/200/300?grayscale==2"
     ),
     AirBnbTabResponse(
         title: "Lakefront",
-        imageUrl: "https://picsum.photos/500/300?random=3"
+        imageUrl: "https://picsum.photos/200/300?grayscale==3"
     ),
     AirBnbTabResponse(
         title: "Treehouse",
-        imageUrl: "https://picsum.photos/500/300?random=4"
+        imageUrl: "https://picsum.photos/200/300?grayscale==4"
     ),
     AirBnbTabResponse(
         title: "Top cities",
-        imageUrl: "https://picsum.photos/500/300?random=5"
+        imageUrl: "https://picsum.photos/200/300?grayscale==5"
     ),
 ]

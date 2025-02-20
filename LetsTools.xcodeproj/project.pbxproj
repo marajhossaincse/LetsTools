@@ -38,6 +38,7 @@
 		D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93452B92D46336F008769C3 /* UberCloneHomeView.swift */; };
 		D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961696B2D5DE45E004DF017 /* ImageCarousel.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
+		D96F0F072D637F070011BC93 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0F062D637F070011BC93 /* DetailView.swift */; };
 		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
 		D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */; };
 		D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */; };
@@ -125,6 +126,7 @@
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D93452B92D46336F008769C3 /* UberCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneHomeView.swift; sourceTree = "<group>"; };
 		D961696B2D5DE45E004DF017 /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
+		D96F0F062D637F070011BC93 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
 		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
 		D971E4572D3F6CEA008F93D5 /* UberHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHomeView.swift; sourceTree = "<group>"; };
@@ -675,6 +677,7 @@
 			isa = PBXGroup;
 			children = (
 				D9BD678A2D631A31001EAFFA /* HomeView.swift */,
+				D96F0F062D637F070011BC93 /* DetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -704,8 +707,8 @@
 		D9BD67832D631548001EAFFA /* TabModel */ = {
 			isa = PBXGroup;
 			children = (
-				D9BD67842D631561001EAFFA /* AirBnbTabResponse.swift */,
 				D9BD67862D631589001EAFFA /* AirBnBTabData.swift */,
+				D9BD67842D631561001EAFFA /* AirBnbTabResponse.swift */,
 			);
 			path = TabModel;
 			sourceTree = "<group>";
@@ -893,6 +896,7 @@
 				D9084E1A2D3825360036E871 /* FeedData.swift in Sources */,
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				D9BD677C2D6312FB001EAFFA /* HostListResponse.swift in Sources */,
+				D96F0F072D637F070011BC93 /* DetailView.swift in Sources */,
 				D9BD67782D631235001EAFFA /* DetailResponse.swift in Sources */,
 				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
 				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
@@ -1036,6 +1040,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1065,6 +1070,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

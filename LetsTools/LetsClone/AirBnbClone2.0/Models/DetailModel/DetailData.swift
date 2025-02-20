@@ -15,12 +15,12 @@ let detailRecord = DetailResponse(
         HostListResponse(
             name: "Superhost",
             description: "John has been a Superhost for over 3 years, providing exceptional stays.",
-            icon: "🏅"
+            icon: "medal.fill"
         ),
         HostListResponse(
             name: "Verified Host",
             description: "All your bookings are confirmed and secure with a verified host.",
-            icon: "✔️"
+            icon: "checkmark"
         )
     ],
     bedRoomDetail: [
@@ -38,15 +38,15 @@ let detailRecord = DetailResponse(
     placeOfferList: [
         PlaceOfferResponse(
             name: "Free WiFi",
-            icon: "📶"
+            icon: "wifi"
         ),
         PlaceOfferResponse(
             name: "Swimming Pool",
-            icon: "🏊‍♀️"
+            icon: "drop.fill"
         ),
         PlaceOfferResponse(
             name: "Gym Access",
-            icon: "💪"
+            icon: "dumbbell.fill"
         )
     ],
     reviewList: [
