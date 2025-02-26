@@ -37,6 +37,9 @@
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93452B92D46336F008769C3 /* UberCloneHomeView.swift */; };
 		D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961696B2D5DE45E004DF017 /* ImageCarousel.swift */; };
+		D96260222D6F3CB500973A1D /* BooksHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96260212D6F3CB500973A1D /* BooksHomeView.swift */; };
+		D96260242D6F3D1B00973A1D /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96260232D6F3CE500973A1D /* BookResponse.swift */; };
+		D96260262D6F586000973A1D /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96260252D6F586000973A1D /* BookData.swift */; };
 		D962E1452D38625600C7CBA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D962E1442D38625600C7CBA1 /* Kingfisher */; };
 		D96F0F072D637F070011BC93 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0F062D637F070011BC93 /* DetailView.swift */; };
 		D971E4542D3ED923008F93D5 /* UberRidesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */; };
@@ -126,6 +129,9 @@
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D93452B92D46336F008769C3 /* UberCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneHomeView.swift; sourceTree = "<group>"; };
 		D961696B2D5DE45E004DF017 /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
+		D96260212D6F3CB500973A1D /* BooksHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksHomeView.swift; sourceTree = "<group>"; };
+		D96260232D6F3CE500973A1D /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		D96260252D6F586000973A1D /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		D96F0F062D637F070011BC93 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D971E4532D3ED923008F93D5 /* UberRidesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRidesScreen.swift; sourceTree = "<group>"; };
 		D971E4552D3ED931008F93D5 /* UberEatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsScreen.swift; sourceTree = "<group>"; };
@@ -448,6 +454,32 @@
 			path = LetsSlide;
 			sourceTree = "<group>";
 		};
+		D962601E2D6E4A1300973A1D /* BooksClone */ = {
+			isa = PBXGroup;
+			children = (
+				D962601F2D6E4A1E00973A1D /* Models */,
+				D96260202D6E4A2300973A1D /* Screens */,
+			);
+			path = BooksClone;
+			sourceTree = "<group>";
+		};
+		D962601F2D6E4A1E00973A1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D96260232D6F3CE500973A1D /* BookResponse.swift */,
+				D96260252D6F586000973A1D /* BookData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D96260202D6E4A2300973A1D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D96260212D6F3CB500973A1D /* BooksHomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		D970A5B22D46085000CF76B8 /* UberClone2.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +662,7 @@
 		D9B73E2F2CF4C86000A63E04 /* LetsClone */ = {
 			isa = PBXGroup;
 			children = (
+				D962601E2D6E4A1300973A1D /* BooksClone */,
 				D985827F2D4614A300DDBA94 /* Themes */,
 				D9B73E302CF4CA6100A63E04 /* FacebookClone */,
 				D9084E162D3823310036E871 /* FaceBookClone2.0 */,
@@ -823,6 +856,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96260222D6F3CB500973A1D /* BooksHomeView.swift in Sources */,
 				CE2F75262C42EB2F00076DC3 /* ContainerMenuScreen.swift in Sources */,
 				D971E4582D3F6CEA008F93D5 /* UberHomeView.swift in Sources */,
 				D9F4E40A2D4C965900C17ED8 /* YTHomeView.swift in Sources */,
@@ -872,6 +906,7 @@
 				D98582682D4609A500DDBA94 /* EatsRestaurantData.swift in Sources */,
 				D98582612D46092700DDBA94 /* EatsCategoryResponse.swift in Sources */,
 				D92793A62D564C7500E0948D /* AirbnbHomeScreen.swift in Sources */,
+				D96260262D6F586000973A1D /* BookData.swift in Sources */,
 				D98582632D46093300DDBA94 /* EatsData.swift in Sources */,
 				D9D0E7FE2D0088D5001373E0 /* StoryCart.swift in Sources */,
 				D9156D1A2D568B9800A59ED5 /* BnbSitesData.swift in Sources */,
@@ -897,6 +932,7 @@
 				CE2F025D2BFA4BF000EE3919 /* LoadingView.swift in Sources */,
 				D9BD677C2D6312FB001EAFFA /* HostListResponse.swift in Sources */,
 				D96F0F072D637F070011BC93 /* DetailView.swift in Sources */,
+				D96260242D6F3D1B00973A1D /* BookResponse.swift in Sources */,
 				D9BD67782D631235001EAFFA /* DetailResponse.swift in Sources */,
 				D9084E262D3832320036E871 /* StoryResponse.swift in Sources */,
 				D971E4562D3ED931008F93D5 /* UberEatsScreen.swift in Sources */,
