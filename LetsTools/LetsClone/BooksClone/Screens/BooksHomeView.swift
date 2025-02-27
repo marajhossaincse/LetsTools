@@ -20,6 +20,8 @@ struct BooksHomeView: View {
                     NewAndTrendingBooksView()
 
                     TopChartsView()
+
+                    ComingSoonView()
                 }
             }
             .navigationTitle("Book Store")
@@ -173,6 +175,37 @@ struct TopChartRowView: View {
 
             Divider()
                 .padding(.vertical)
+        }
+    }
+}
+
+struct ComingSoonView: View {
+    var books: [BookResponse] = booksData
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            VStack(alignment: .leading) {
+                Text("Coming soon")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+
+                Text("Lorem ipsum dolor sit amet")
+                    .font(.subheadline)
+                    .foregroundStyle(Color.systemGray)
+            }
+            .padding(.horizontal)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    ForEach(books) { book in
+
+                        KFImage(URL(string: book.thumbnail))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 150, height: 200)
+                    }
+                }
+            }
+            .padding(.leading)
         }
     }
 }
