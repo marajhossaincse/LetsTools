@@ -16,6 +16,8 @@ struct BooksHomeView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     ThemeBasedBookBannerView()
+
+                    NewAndTrendingBooksView()
                 }
             }
             .navigationTitle("Book Store")
@@ -71,5 +73,38 @@ struct BannerView: View {
         }
         .frame(width: 350)
         .padding(.leading)
+    }
+}
+
+struct NewAndTrendingBooksView: View {
+    var books: [BookResponse] = booksData
+
+    let gridItems = [
+        GridItem(.fixed(150), spacing: 10),
+        GridItem(.fixed(150), spacing: 10)
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("New & Trending")
+                .font(.title2)
+                .fontWeight(.semibold)
+
+            Text("Recently released and notable books.")
+                .font(.caption)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHGrid(rows: gridItems, spacing: 10) {
+                    ForEach(books) { book in
+                        KFImage(URL(string: book.thumbnail))
+                            .resizable()
+                            .frame(width: 100, height: 150)
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.leading)
+        .padding(.vertical)
     }
 }
