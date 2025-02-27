@@ -357,6 +357,22 @@
 			path = BnbSiteModel;
 			sourceTree = "<group>";
 		};
+		D91BD7702D6FA37A00B74976 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				D96260252D6F586000973A1D /* BookData.swift */,
+				D96260232D6F3CE500973A1D /* BookResponse.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		D91BD7712D6FA38600B74976 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
 		D92793A22D56488000E0948D /* AirBnbClone */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,8 +482,8 @@
 		D962601F2D6E4A1E00973A1D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D96260232D6F3CE500973A1D /* BookResponse.swift */,
-				D96260252D6F586000973A1D /* BookData.swift */,
+				D91BD7712D6FA38600B74976 /* Banner */,
+				D91BD7702D6FA37A00B74976 /* Books */,
 			);
 			path = Models;
 			sourceTree = "<group>";

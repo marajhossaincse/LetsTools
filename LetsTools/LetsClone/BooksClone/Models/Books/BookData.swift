@@ -7,7 +7,7 @@
 
 import Foundation
 
-let sampleBooksResponse: BooksResponse = [
+var booksData: [BookResponse] = [
     BookResponse(
         title: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
