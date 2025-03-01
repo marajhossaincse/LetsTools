@@ -133,8 +133,8 @@ struct TopChartsView: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItems, spacing: 32) {
-                    ForEach(books) { book in
-                        TopChartRowView(book: book)
+                    ForEach(Array(books.enumerated()), id: \.element.id) { index, book in
+                        TopChartRowView(book: book, index: index)
                     }
                 }
             }
@@ -146,6 +146,7 @@ struct TopChartsView: View {
 
 struct TopChartRowView: View {
     var book: BookResponse
+    var index: Int
 
     var body: some View {
         VStack {
@@ -155,7 +156,7 @@ struct TopChartRowView: View {
                     .scaledToFill()
                     .frame(width: 80, height: 110)
 
-                Text("1")
+                Text("\(index + 1)")
                     .font(.subheadline)
                     .fontWeight(.semibold)
 

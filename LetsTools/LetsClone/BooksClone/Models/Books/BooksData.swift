@@ -11,10 +11,10 @@ var booksData: [BookResponse] = [
     BookResponse(
         title: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
-        rating: 5,
+        rating: 3,
         totalRatings: "1.2K",
         price: "$10.99",
-        thumbnail: "https://picsum.photos/200/300?random=1"
+        thumbnail: "https://picsum.photos/200/300?random=10"
     ),
     BookResponse(
         title: "To Kill a Mockingbird",
@@ -22,7 +22,7 @@ var booksData: [BookResponse] = [
         rating: 4,
         totalRatings: "2.4K",
         price: "$12.99",
-        thumbnail: "https://picsum.photos/200/300?random=2"
+        thumbnail: "https://picsum.photos/200/300?random=20"
     ),
     BookResponse(
         title: "1984",
@@ -30,7 +30,7 @@ var booksData: [BookResponse] = [
         rating: 5,
         totalRatings: "3.1K",
         price: "$14.99",
-        thumbnail: "https://picsum.photos/200/300?random=3"
+        thumbnail: "https://picsum.photos/200/300?random=30"
     ),
     BookResponse(
         title: "The Catcher in the Rye",
@@ -38,7 +38,7 @@ var booksData: [BookResponse] = [
         rating: 4,
         totalRatings: "1.8K",
         price: "$11.49",
-        thumbnail: "https://picsum.photos/200/300?random=4"
+        thumbnail: "https://picsum.photos/200/300?random=40"
     ),
     BookResponse(
         title: "The Catcher in the Rye",
@@ -46,7 +46,7 @@ var booksData: [BookResponse] = [
         rating: 4,
         totalRatings: "1.8K",
         price: "$11.49",
-        thumbnail: "https://picsum.photos/200/300?random=4"
+        thumbnail: "https://picsum.photos/200/300?random=50"
     ),
     BookResponse(
         title: "1984",
@@ -54,7 +54,7 @@ var booksData: [BookResponse] = [
         rating: 5,
         totalRatings: "3.2K",
         price: "$9.99",
-        thumbnail: "https://picsum.photos/200/300?random=5"
+        thumbnail: "https://picsum.photos/200/300?random=60"
     ),
     BookResponse(
         title: "To Kill a Mockingbird",
@@ -62,7 +62,7 @@ var booksData: [BookResponse] = [
         rating: 5,
         totalRatings: "2.5K",
         price: "$12.99",
-        thumbnail: "https://picsum.photos/200/300?random=6"
+        thumbnail: "https://picsum.photos/200/300?random=70"
     ),
     BookResponse(
         title: "Moby Dick",
@@ -70,7 +70,7 @@ var booksData: [BookResponse] = [
         rating: 3,
         totalRatings: "1.1K",
         price: "$15.00",
-        thumbnail: "https://picsum.photos/200/300?random=8"
+        thumbnail: "https://picsum.photos/200/300?random=80"
     ),
     BookResponse(
         title: "Pride and Prejudice",
@@ -78,7 +78,7 @@ var booksData: [BookResponse] = [
         rating: 4,
         totalRatings: "3.0K",
         price: "$8.49",
-        thumbnail: "https://picsum.photos/200/300?random=9"
+        thumbnail: "https://picsum.photos/200/300?random=90"
     ),
     BookResponse(
         title: "Brave New World",
@@ -86,7 +86,7 @@ var booksData: [BookResponse] = [
         rating: 4,
         totalRatings: "2.8K",
         price: "$10.99",
-        thumbnail: "https://picsum.photos/200/300?random=10"
+        thumbnail: "https://picsum.photos/200/300?random=100"
     ),
     BookResponse(
         title: "The Lord of the Rings",
@@ -94,7 +94,7 @@ var booksData: [BookResponse] = [
         rating: 5,
         totalRatings: "5.5K",
         price: "$25.99",
-        thumbnail: "https://picsum.photos/200/300?random=11"
+        thumbnail: "https://picsum.photos/200/300?random=110"
     ),
     BookResponse(
         title: "Harry Potter and the Sorcerer's Stone",
@@ -102,14 +102,6 @@ var booksData: [BookResponse] = [
         rating: 5,
         totalRatings: "7.4K",
         price: "$14.99",
-        thumbnail: "https://picsum.photos/200/300?random=12"
-    ),
-    BookResponse(
-        title: "The Hobbit",
-        author: "J.R.R. Tolkien",
-        rating: 4,
-        totalRatings: "3.6K",
-        price: "$12.49",
-        thumbnail: "https://picsum.photos/200/300?random=13"
+        thumbnail: "https://picsum.photos/200/300?random=120"
     )
 ]

@@ -36,6 +36,7 @@
 		D92983D12D50B4110053E4DA /* YTCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92983D02D50B4110053E4DA /* YTCloneHomeView.swift */; };
 		D92AC1632D3634530020B56D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92AC1622D3634530020B56D /* User.swift */; };
 		D93452BA2D46336F008769C3 /* UberCloneHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93452B92D46336F008769C3 /* UberCloneHomeView.swift */; };
+		D95EEB4C2D70E60900CD500D /* BookDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EEB4B2D70E60900CD500D /* BookDetailsView.swift */; };
 		D961696C2D5DE45E004DF017 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961696B2D5DE45E004DF017 /* ImageCarousel.swift */; };
 		D96260222D6F3CB500973A1D /* BooksHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96260212D6F3CB500973A1D /* BooksHomeView.swift */; };
 		D96260242D6F3D1B00973A1D /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96260232D6F3CE500973A1D /* BookResponse.swift */; };
@@ -128,6 +129,7 @@
 		D92983D02D50B4110053E4DA /* YTCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTCloneHomeView.swift; sourceTree = "<group>"; };
 		D92AC1622D3634530020B56D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D93452B92D46336F008769C3 /* UberCloneHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneHomeView.swift; sourceTree = "<group>"; };
+		D95EEB4B2D70E60900CD500D /* BookDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsView.swift; sourceTree = "<group>"; };
 		D961696B2D5DE45E004DF017 /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		D96260212D6F3CB500973A1D /* BooksHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksHomeView.swift; sourceTree = "<group>"; };
 		D96260232D6F3CE500973A1D /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				D96260212D6F3CB500973A1D /* BooksHomeView.swift */,
+				D95EEB4B2D70E60900CD500D /* BookDetailsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -883,6 +886,7 @@
 				D9084E2E2D38417F0036E871 /* FBCloneHomeView.swift in Sources */,
 				D98582722D460B7700DDBA94 /* RidesHistoryResponse.swift in Sources */,
 				D9BD677E2D631354001EAFFA /* PlaceOfferResponse.swift in Sources */,
+				D95EEB4C2D70E60900CD500D /* BookDetailsView.swift in Sources */,
 				D971E45D2D3FBFDB008F93D5 /* RideHistoryResponse.swift in Sources */,
 				D92983CF2D50A86E0053E4DA /* VideoSectionData.swift in Sources */,
 				CE2F02592BFA2F9200EE3919 /* MainScreen.swift in Sources */,
