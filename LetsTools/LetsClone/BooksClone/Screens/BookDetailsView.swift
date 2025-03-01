@@ -59,17 +59,20 @@ struct BookDetailsView: View {
                     
                     Text("WANT TO READ")
                 }
-                .foregroundStyle(Color.systemBlack)
-                .frame(width: 320*60/100, height: 50)
-                .clipShape(Capsule().stroke(lineWidth: 2))
+                .foregroundStyle(Color.label)
+                .padding(10)
+                .background(Color.clear)
+                .overlay(Capsule().stroke(Color.systemBlack, lineWidth: 1.5))
                 
                 Button {} label: {
                     Image(systemName: "book.pages.fill")
                     
                     Text("SAMPLE")
                 }
-                .frame(width: 320*40/100, height: 50)
-                .foregroundStyle(Color.systemBlack)
+                .foregroundStyle(Color.label)
+                .padding(10)
+                .background(Color.clear)
+                .overlay(Capsule().stroke(Color.systemBlack, lineWidth: 1.5))
             }
             .frame(width: 320)
             .clipShape(Capsule())
@@ -87,6 +90,7 @@ struct BookDetailsView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

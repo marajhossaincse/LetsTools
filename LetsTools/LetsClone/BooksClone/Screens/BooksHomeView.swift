@@ -101,9 +101,14 @@ struct NewAndTrendingBooksView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItems, spacing: 10) {
                     ForEach(books) { book in
-                        KFImage(URL(string: book.thumbnail))
-                            .resizable()
-                            .frame(width: 100, height: 150)
+
+                        NavigationLink {
+                            BookDetailsView(book: book)
+                        } label: {
+                            KFImage(URL(string: book.thumbnail))
+                                .resizable()
+                                .frame(width: 100, height: 150)
+                        }
                     }
                 }
             }
@@ -134,7 +139,12 @@ struct TopChartsView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItems, spacing: 32) {
                     ForEach(Array(books.enumerated()), id: \.element.id) { index, book in
-                        TopChartRowView(book: book, index: index)
+
+                        NavigationLink {
+                            BookDetailsView(book: book)
+                        } label: {
+                            TopChartRowView(book: book, index: index)
+                        }
                     }
                 }
             }
@@ -173,6 +183,7 @@ struct TopChartRowView: View {
                 .padding(.trailing)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
+            .foregroundStyle(Color.label)
 
             Divider()
                 .padding(.vertical)
@@ -199,10 +210,14 @@ struct ComingSoonView: View {
                 HStack(spacing: 10) {
                     ForEach(books) { book in
 
-                        KFImage(URL(string: book.thumbnail))
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 150, height: 200)
+                        NavigationLink {
+                            BookDetailsView(book: book)
+                        } label: {
+                            KFImage(URL(string: book.thumbnail))
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 150, height: 200)
+                        }
                     }
                 }
             }
