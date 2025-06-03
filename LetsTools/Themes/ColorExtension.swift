@@ -21,7 +21,7 @@ extension Color {
         self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
     }
 
-    /// facebook colors
+    // Facebook colors
     static let primaryColor = Color(hex: "#3875E9")
 
     static let successColor = Color(hex: "#69BA6A")
@@ -42,7 +42,7 @@ extension Color {
 
     static let uberTextFieldColor = Color(hex: "#E8E8E8")
 
-    /// Youtube colors
+    // Youtube colors
     static let grayButtonColor = Color(hex: "#272727")
 
     // MARK: - Text Colors

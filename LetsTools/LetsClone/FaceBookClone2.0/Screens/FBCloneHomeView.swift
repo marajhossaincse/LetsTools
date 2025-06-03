@@ -481,7 +481,7 @@ struct PhotoFeedView: View {
             HStack(spacing: 10) {
                 // profile
                 ZStack(alignment: .topLeading) {
-                    //         profile and online circle
+                    // profile and online circle
                     ZStack(alignment: .bottomTrailing) {
                         KFImage(URL(string: feed.user.imageUrl))
                             .resizable()
@@ -496,7 +496,7 @@ struct PhotoFeedView: View {
                                 .fill(Color.successColor)
                                 .frame(width: 12, height: 12)
                                 .overlay(Circle().stroke(.white))
-                                .offset(x: 0, y: 0)
+                                .offset(x: -10, y: -10)
                         }
                     }
                 }

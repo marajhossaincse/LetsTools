@@ -57,6 +57,7 @@ struct ImageCarousel: View {
             .frame(height: 200)
             .padding()
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

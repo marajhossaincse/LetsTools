@@ -11,7 +11,7 @@ import SwiftUI
 struct LetsToolsApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack {
                 HomeScreen()
             }
         }

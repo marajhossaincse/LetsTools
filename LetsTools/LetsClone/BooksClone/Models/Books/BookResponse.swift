@@ -15,4 +15,5 @@ struct BookResponse: Identifiable {
     var totalRatings: String
     var price: String
     var thumbnail: String
+    var description: String
 }
